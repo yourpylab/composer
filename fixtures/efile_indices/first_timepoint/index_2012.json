@@ -1,0 +1,59 @@
+{
+  "Filings2012": [
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201112",
+      "DLN": "93492228008102",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201202289349200810_public.xml",
+      "OrganizationName": "COOKING WITH KIDS FOUNDATION",
+      "SubmittedOn": "2012-10-29",
+      "ObjectId": "201202289349200810",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201112",
+      "DLN": "93493304009352",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201203049349300935_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2012-11-13",
+      "ObjectId": "201203049349300935",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "208419458",
+      "TaxPeriod": "201112",
+      "DLN": "93491150004112",
+      "FormType": "990PF",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201211509349100411_public.xml",
+      "OrganizationName": "GROSSHUTTON FAMILY FOUNDATION",
+      "SubmittedOn": "2012-12-31",
+      "ObjectId": "201211509349100411",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201112",
+      "DLN": "93493135035372",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201221359349303537_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2012-10-11",
+      "ObjectId": "201221359349303537",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "364201074",
+      "TaxPeriod": "201112",
+      "DLN": "93493068000392",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201240689349300039_public.xml",
+      "OrganizationName": "CENTURY WALK CORPORATION CO W BRAND BOBOSKY",
+      "SubmittedOn": "2012-09-18",
+      "ObjectId": "201240689349300039",
+      "LastUpdated": "2016-03-21T17:23:53"
+    }
+  ]
+}

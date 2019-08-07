@@ -1,0 +1,81 @@
+{
+  "Filings2017": [
+    {
+      "EIN": "208419458",
+      "TaxPeriod": "201512",
+      "DLN": "93491242005596",
+      "FormType": "990PF",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201642429349100559_public.xml",
+      "OrganizationName": "GROSSHUTTON FAMILY FOUNDATION",
+      "SubmittedOn": "2017-01-05",
+      "ObjectId": "201642429349100559",
+      "LastUpdated": "2017-01-11T22:15:15"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201612",
+      "DLN": "93493030008467",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201710309349300846_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2017-08-03",
+      "ObjectId": "201710309349300846",
+      "LastUpdated": "2017-09-13T21:58:58"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201512",
+      "DLN": "93493024001037",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201730249349300103_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2017-07-18",
+      "ObjectId": "201730249349300103",
+      "LastUpdated": "2017-09-13T21:58:58"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201412",
+      "DLN": "93493024005437",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201730249349300543_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2017-07-18",
+      "ObjectId": "201730249349300543",
+      "LastUpdated": "2017-09-13T21:58:58"
+    },
+    {
+      "EIN": "208419458",
+      "TaxPeriod": "201612",
+      "DLN": "93491135032427",
+      "FormType": "990PF",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201721359349103242_public.xml",
+      "OrganizationName": "GROSSHUTTON FAMILY FOUNDATION",
+      "SubmittedOn": "2017-09-26",
+      "ObjectId": "201721359349103242",
+      "LastUpdated": "2017-10-13T18:40:16"
+    },
+    {
+      "EIN": "364201074",
+      "TaxPeriod": "201612",
+      "DLN": "93493234009597",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201742349349300959_public.xml",
+      "OrganizationName": "CENTURY WALK CORPORATION",
+      "SubmittedOn": "2017-10-13",
+      "ObjectId": "201742349349300959",
+      "LastUpdated": "2017-11-15T14:51:02"
+    },
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201612",
+      "DLN": "93492242002157",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201702429349200215_public.xml",
+      "OrganizationName": "COOKING WITH KIDS FOUNDATION",
+      "SubmittedOn": "2017-10-13",
+      "ObjectId": "201702429349200215",
+      "LastUpdated": "2017-11-15T14:51:02"
+    }
+  ]
+}

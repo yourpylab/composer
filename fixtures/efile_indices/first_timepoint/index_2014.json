@@ -1,0 +1,114 @@
+{
+  "Filings2014": [
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201312",
+      "DLN": "93493321040364",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201413219349304036_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2014-12-29",
+      "ObjectId": "201413219349304036",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "208419458",
+      "TaxPeriod": "201312",
+      "DLN": "93491230006124",
+      "FormType": "990PF",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201422309349100612_public.xml",
+      "OrganizationName": "GROSSHUTTON FAMILY FOUNDATION",
+      "SubmittedOn": "2014-10-03",
+      "ObjectId": "201422309349100612",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "364201074",
+      "TaxPeriod": "201312",
+      "DLN": "93493134065074",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201421349349306507_public.xml",
+      "OrganizationName": "CENTURY WALK CORPORATION CO W BRAND BOBOSKY",
+      "SubmittedOn": "2014-10-14",
+      "ObjectId": "201421349349306507",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201312",
+      "DLN": "93492223001084",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201432239349200108_public.xml",
+      "OrganizationName": "COOKING WITH KIDS FOUNDATION",
+      "SubmittedOn": "2014-10-21",
+      "ObjectId": "201432239349200108",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "208419458",
+      "TaxPeriod": "201312",
+      "DLN": "93491139005544",
+      "FormType": "990PF",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201441399349100554_public.xml",
+      "OrganizationName": "GROSSHUTTON FAMILY FOUNDATION",
+      "SubmittedOn": "2014-11-07",
+      "ObjectId": "201441399349100554",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "208419458",
+      "TaxPeriod": "201212",
+      "DLN": "93491135020583",
+      "FormType": "990PF",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201331359349102058_public.xml",
+      "OrganizationName": "GROSSHUTTON FAMILY FOUNDATION",
+      "SubmittedOn": "2014-01-13",
+      "ObjectId": "201331359349102058",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201112",
+      "DLN": "93492223005124",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201422239349200512_public.xml",
+      "OrganizationName": "COOKING WITH KIDS FOUNDATION",
+      "SubmittedOn": "2014-10-01",
+      "ObjectId": "201422239349200512",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201212",
+      "DLN": "93492223005134",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201432239349200513_public.xml",
+      "OrganizationName": "COOKING WITH KIDS",
+      "SubmittedOn": "2014-10-20",
+      "ObjectId": "201432239349200513",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201212",
+      "DLN": "93493290000413",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201312909349300041_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2014-01-09",
+      "ObjectId": "201312909349300041",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201312",
+      "DLN": "93493113005064",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201411139349300506_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2014-09-24",
+      "ObjectId": "201411139349300506",
+      "LastUpdated": "2016-03-21T17:23:53"
+    }
+  ]
+}

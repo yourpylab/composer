@@ -1,0 +1,26 @@
+{
+  "Filings2018": [
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201712",
+      "DLN": "93493058002278",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201820589349300227_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2018-08-02",
+      "ObjectId": "201820589349300227",
+      "LastUpdated": "2018-10-16T15:38:26"
+    },
+    {
+      "EIN": "364201074",
+      "TaxPeriod": "201712",
+      "DLN": "93493235009148",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201842359349300914_public.xml",
+      "OrganizationName": "CENTURY WALK CORPORATION",
+      "SubmittedOn": "2018-10-19",
+      "ObjectId": "201842359349300914",
+      "LastUpdated": "2018-11-15T17:06:31"
+    }
+  ]
+}

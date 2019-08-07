@@ -1,0 +1,48 @@
+{
+  "Filings2016": [
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201412",
+      "DLN": "93493063000356",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201600639349300035_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2016-07-21",
+      "ObjectId": "201600639349300035",
+      "LastUpdated": "2016-09-09T23:14:27"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201512",
+      "DLN": "93493063006346",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201640639349300634_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2016-08-16",
+      "ObjectId": "201640639349300634",
+      "LastUpdated": "2016-09-09T23:14:27"
+    },
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201512",
+      "DLN": "93492130005406",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201601309349200540_public.xml",
+      "OrganizationName": "COOKING WITH KIDS FOUNDATION",
+      "SubmittedOn": "2016-09-06",
+      "ObjectId": "201601309349200540",
+      "LastUpdated": "2016-10-12T19:43:10"
+    },
+    {
+      "EIN": "364201074",
+      "TaxPeriod": "201512",
+      "DLN": "93493137012126",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201621379349301212_public.xml",
+      "OrganizationName": "CENTURY WALK CORPORATION CO W BRAND BOBOSKY",
+      "SubmittedOn": "2016-12-27",
+      "ObjectId": "201621379349301212",
+      "LastUpdated": "2017-01-11T22:15:19.5060064Z"
+    }
+  ]
+}

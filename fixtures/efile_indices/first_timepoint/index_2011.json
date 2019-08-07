@@ -1,0 +1,48 @@
+{
+  "Filings2011": [
+    {
+      "EIN": "364201074",
+      "TaxPeriod": "201012",
+      "DLN": "93493138000101",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201101389349300010_public.xml",
+      "OrganizationName": "CENTURY WALK CORPORATION",
+      "SubmittedOn": "2011-10-12",
+      "ObjectId": "201101389349300010",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "208419458",
+      "TaxPeriod": "201012",
+      "DLN": "93491136013171",
+      "FormType": "990PF",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201121369349101317_public.xml",
+      "OrganizationName": "GROSSHUTTON FAMILY FOUNDATION",
+      "SubmittedOn": "2011-10-14",
+      "ObjectId": "201121369349101317",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201012",
+      "DLN": "93493299007301",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201102999349300730_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2011-11-15",
+      "ObjectId": "201102999349300730",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201012",
+      "DLN": "93493091004121",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201120919349300412_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2011-09-28",
+      "ObjectId": "201120919349300412",
+      "LastUpdated": "2016-03-21T17:23:53"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Filings2019": [
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201812",
+      "DLN": "93493079012049",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201940799349301204_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2019-05-20",
+      "ObjectId": "201940799349301204",
+      "LastUpdated": "2019-06-19T01:50:03"
+    }
+  ]
+}

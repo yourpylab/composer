@@ -1,0 +1,59 @@
+{
+  "Filings2013": [
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201212",
+      "DLN": "93492227020193",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201342279349202019_public.xml",
+      "OrganizationName": "COOKING WITH KIDS",
+      "SubmittedOn": "2013-12-04",
+      "ObjectId": "201342279349202019",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201212",
+      "DLN": "93493059001073",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201320599349300107_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2013-07-17",
+      "ObjectId": "201320599349300107",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201012",
+      "DLN": "93492228008183",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201332289349200818_public.xml",
+      "OrganizationName": "COOKING WITH KIDS FOUNDATION",
+      "SubmittedOn": "2013-09-27",
+      "ObjectId": "201332289349200818",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201112",
+      "DLN": "93492231005023",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201322319349200502_public.xml",
+      "OrganizationName": "COOKING WITH KIDS FOUNDATION",
+      "SubmittedOn": "2013-09-27",
+      "ObjectId": "201322319349200502",
+      "LastUpdated": "2016-03-21T17:23:53"
+    },
+    {
+      "EIN": "364201074",
+      "TaxPeriod": "201212",
+      "DLN": "93493134001983",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201331349349300198_public.xml",
+      "OrganizationName": "CENTURY WALK CORPORATION CO W BRAND BOBOSKY",
+      "SubmittedOn": "2013-08-14",
+      "ObjectId": "201331349349300198",
+      "LastUpdated": "2016-03-21T17:23:53"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "Filings2018": [
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201712",
+      "DLN": "93493058002278",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201820589349300227_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2018-08-02",
+      "ObjectId": "201820589349300227",
+      "LastUpdated": "2018-10-16T15:38:26"
+    },
+    {
+      "EIN": "364201074",
+      "TaxPeriod": "201712",
+      "DLN": "93493235009148",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201842359349300914_public.xml",
+      "OrganizationName": "CENTURY WALK CORPORATION",
+      "SubmittedOn": "2018-10-19",
+      "ObjectId": "201842359349300914",
+      "LastUpdated": "2018-11-15T17:06:31"
+    },
+    {
+      "EIN": "208419458",
+      "TaxPeriod": "201712",
+      "DLN": "93491134011868",
+      "FormType": "990PF",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201811349349101186_public.xml",
+      "OrganizationName": "GROSSHUTTON FAMILY FOUNDATION",
+      "SubmittedOn": "2018-10-02",
+      "ObjectId": "201811349349101186",
+      "LastUpdated": "2018-10-16T15:38:26"
+    },
+    {
+      "EIN": "260687839",
+      "TaxPeriod": "201712",
+      "DLN": "93492239001148",
+      "FormType": "990EZ",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201842399349200114_public.xml",
+      "OrganizationName": "COOKING WITH KIDS FOUDATION",
+      "SubmittedOn": "2018-10-26",
+      "ObjectId": "201842399349200114",
+      "LastUpdated": "2018-11-15T17:06:31"
+    },
+    {
+      "EIN": "943041314",
+      "TaxPeriod": "201612",
+      "DLN": "93493169004458",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201801699349300445_public.xml",
+      "OrganizationName": "LAW ENFORCEMENT OFFICERS AND FIREFIGHTERS HEALTH AND WELFARE TRUST",
+      "SubmittedOn": "2018-11-08",
+      "ObjectId": "201801699349300445",
+      "LastUpdated": "2018-12-22T17:14:37"
+    }
+  ]
+}

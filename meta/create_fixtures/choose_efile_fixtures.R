@@ -40,7 +40,8 @@ write_csv(amended, "/dmz/github/analysis/composer/tmp/efile_indices/amended.csv"
 retained_eins <- c(
   "943041314",   # 9 periods, amended filing appeared in three different years
   "260687839",   # Amended EZ from pre-2011; 8 periods, amended filing appeared in three different years
-  "208419458"    # Amended PF; 9 periods, amended filing appears all in one year
+  "208419458",   # Amended PF; 9 periods, amended filing appears all in one year -- will have them both appear in first simulated data pull
+  "364201074"    # Amended 990; 8 periods, amended filing appears all in one year -- will have one appear in second simulated data pull
 )
 retained_efiles <- all_efiles %>%
   filter(EIN %in% retained_eins)

@@ -1,0 +1,92 @@
+import dataclasses
+from sqlite3 import Connection, Cursor, connect
+from typing import Dict, Iterator, Optional, Tuple
+
+from attr import dataclass
+
+from composer.efile.filing import Filing
+
+@dataclass
+class EfileIndexTable:
+    conn: Connection
+    table_name: str
+
+    def upsert(self, filing: Filing):
+        """Inserts or replaces existing row in the table."""
+        query: str = "INSERT OR REPLACE INTO %s VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" % self.table_name
+        values: Tuple = dataclasses.astuple(filing)
+        cursor: Cursor = self.conn.cursor()
+        cursor.execute(query, values)
+
+    def delete_if_exists(self, irs_efile_id: str):
+        """Deletes the record from the table, if it exists."""
+        query: str = "DELETE FROM %s WHERE irs_efile_id = ?" % self.table_name
+        cursor: Cursor = self.conn.cursor()
+        cursor.execute(query, (irs_efile_id,))
+
+    def _filings_by_key(self, key_name: str, key_value: str) -> Iterator[Filing]:
+        query: str = "SELECT * FROM %s WHERE %s = ?" % (self.table_name, key_name)
+        cursor: Cursor = self.conn.cursor()
+        for row in cursor.execute(query, (key_value,)):
+            yield Filing(*row)
+
+    def filings_for_ein(self, ein: str) -> Iterator[Filing]:
+        yield from self._filings_by_key("ein", ein)
+
+    def filings_by_record_id(self, record_id: str) -> Iterator[Filing]:
+        yield from self._filings_by_key("record_id", record_id)
+
+    def filings_by_irs_efile_id(self, irs_efile_id: str) -> Iterator[Filing]:
+        yield from self._filings_by_key("irs_efile_id", irs_efile_id)
+
+    def commit(self):
+        self.conn.commit()
+
+def init_sqlite_db(connection_str: str) -> Connection:
+    conn: Connection = connect(connection_str)
+
+    cursor: Cursor = conn.cursor()
+
+    # Create the table for latest filings
+    cursor.execute("""
+        CREATE TABLE latest_filings (
+            record_id text PRIMARY KEY,
+            irs_efile_id text NOT NULL,
+            irs_dln text NOT NULL,
+            ein text NOT NULL,
+            period text NOT NULL,
+            name_org text NOT NULL,
+            form_type text NOT NULL,
+            date_submitted text NOT NULL,
+            date_uploaded text NOT NULL,
+            date_downloaded text NOT NULL,
+            url text NOT NULL
+        );
+    """)
+
+    cursor.execute("CREATE INDEX idx_latest_filings_ein ON latest_filings(ein);")
+    cursor.execute("CREATE INDEX idx_latest_filings_irs_efile_id ON latest_filings(irs_efile_id);")
+
+    # Create table for duplicates
+    cursor.execute("""
+        CREATE TABLE duplicates (
+            record_id text NOT NULL,
+            irs_efile_id text PRIMARY KEY,
+            irs_dln text NOT NULL,
+            ein text NOT NULL,
+            period text NOT NULL,
+            name_org text NOT NULL,
+            form_type text NOT NULL,
+            date_submitted text NOT NULL,
+            date_uploaded text NOT NULL,
+            date_downloaded text NOT NULL,
+            url text NOT NULL
+        );
+    """)
+
+    cursor.execute("CREATE INDEX idx_duplicates_record_id ON duplicates(record_id);")
+    cursor.execute("CREATE INDEX idx_duplicates_ein ON duplicates(ein);")
+    conn.commit()
+
+    return conn
+

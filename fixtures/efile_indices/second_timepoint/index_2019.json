@@ -10,6 +10,17 @@
       "SubmittedOn": "2019-05-20",
       "ObjectId": "201940799349301204",
       "LastUpdated": "2019-06-19T01:50:03"
+    },
+    {
+      "EIN": "581347976",
+      "TaxPeriod": "201806",
+      "DLN": "93493028008079",
+      "FormType": "990",
+      "URL": "https://s3.amazonaws.com/irs-form-990/201920289349300807_public.xml",
+      "OrganizationName": "ROCKDALE CARES INC",
+      "SubmittedOn": "2019-05-08",
+      "ObjectId": "201920289349300807",
+      "LastUpdated": "2019-05-14T02:14:18"
     }
   ]
 }

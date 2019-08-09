@@ -1,4 +1,5 @@
 import dataclasses
+from collections.abc import Iterable
 from sqlite3 import Connection, Cursor, connect
 from typing import Dict, Iterator, Optional, Tuple
 
@@ -7,9 +8,15 @@ from attr import dataclass
 from composer.efile.filing import Filing
 
 @dataclass
-class EfileIndexTable:
+class EfileIndexTable(Iterable):
     conn: Connection
     table_name: str
+
+    def __iter__(self) -> Iterator[Filing]:
+        query: str = "SELECT * FROM %s" % self.table_name
+        cursor: Cursor = self.conn.cursor()
+        for row in cursor.execute(query):
+            yield Filing(*row)
 
     def upsert(self, filing: Filing):
         """Inserts or replaces existing row in the table."""
@@ -30,6 +37,13 @@ class EfileIndexTable:
         for row in cursor.execute(query, (key_value,)):
             yield Filing(*row)
 
+    @property
+    def eins(self) -> Iterator[str]:
+        query: str = "SELECT DISTINCT ein FROM %s" % self.table_name
+        cursor: Cursor = self.conn.cursor()
+        for row in cursor.execute(query):
+            yield row[0]
+
     def filings_for_ein(self, ein: str) -> Iterator[Filing]:
         yield from self._filings_by_key("ein", ein)
 
@@ -38,9 +52,6 @@ class EfileIndexTable:
 
     def filings_by_irs_efile_id(self, irs_efile_id: str) -> Iterator[Filing]:
         yield from self._filings_by_key("irs_efile_id", irs_efile_id)
-
-    def commit(self):
-        self.conn.commit()
 
 def init_sqlite_db(connection_str: str) -> Connection:
     conn: Connection = connect(connection_str)

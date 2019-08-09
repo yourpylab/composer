@@ -49,7 +49,7 @@ def preloaded_orm(empty_db: Connection, alpha_filing_1, alpha_filing_2) -> Calla
         query = "INSERT INTO %s VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);" % table
         cursor.execute(query, dataclasses.astuple(alpha_filing_1))
         cursor.execute(query, dataclasses.astuple(alpha_filing_2))
-        empty_db.commit()
+        #empty_db.commit()
         return EfileIndexTable(empty_db, table)
     return _preloaded_orm
 
@@ -57,7 +57,7 @@ def preloaded_orm(empty_db: Connection, alpha_filing_1, alpha_filing_2) -> Calla
 def test_upsert_new(preloaded_orm, table, filing_original, alpha_filing_1, alpha_filing_2):
     orm: EfileIndexTable = preloaded_orm(table)
     orm.upsert(filing_original)
-    orm.commit()
+    #orm.commit()
     cursor: Cursor = orm.conn.cursor()
     cursor.execute("SELECT * FROM %s" % table)
     expected = {
@@ -73,7 +73,7 @@ def test_upsert_existing_duplicates(preloaded_orm, filing_original, alpha_filing
     orm: EfileIndexTable = preloaded_orm("duplicates")
     filing_original.irs_efile_id = "abcdefghijklmnopqrstuvwxyz"
     orm.upsert(filing_original)
-    orm.commit()
+    #orm.commit()
     cursor: Cursor = orm.conn.cursor()
     cursor.execute("SELECT * FROM duplicates")
     expected = {
@@ -88,7 +88,7 @@ def test_upsert_existing_latest_filings(preloaded_orm, filing_original, alpha_fi
     orm: EfileIndexTable = preloaded_orm("latest_filings")
     filing_original.record_id = "0123456789_201112"
     orm.upsert(filing_original)
-    orm.commit()
+    #orm.commit()
     cursor: Cursor = orm.conn.cursor()
     cursor.execute("SELECT * FROM main.latest_filings")
     expected = {
@@ -102,7 +102,7 @@ def test_upsert_existing_latest_filings(preloaded_orm, filing_original, alpha_fi
 def test_delete_existing(preloaded_orm, table, alpha_filing_2):
     orm: EfileIndexTable = preloaded_orm(table)
     orm.delete_if_exists("abcdefghijklmnopqrstuvwxyz")
-    orm.commit()
+    #orm.commit()
     cursor: Cursor = orm.conn.cursor()
     cursor.execute("SELECT * FROM %s" % table)
     expected = {
@@ -115,7 +115,7 @@ def test_delete_existing(preloaded_orm, table, alpha_filing_2):
 def test_try_to_delete_absent_does_nothing(preloaded_orm, table, alpha_filing_1, alpha_filing_2):
     orm: EfileIndexTable = preloaded_orm(table)
     orm.delete_if_exists("foo bar")
-    orm.commit()
+    #orm.commit()
     cursor: Cursor = orm.conn.cursor()
     cursor.execute("SELECT * FROM %s" % table)
     expected: Set[Tuple] = {
@@ -158,3 +158,17 @@ def test_filings_by_irs_efile_id_exists(preloaded_orm, table, alpha_filing_1):
 def test_filings_by_irs_efile_id_absent(preloaded_orm, table):
     orm: EfileIndexTable = preloaded_orm(table)
     assert list(orm.filings_by_irs_efile_id("201120919349300412")) == []
+
+@pytest.mark.parametrize("table", tables)
+def test_eins(preloaded_orm, table):
+    orm: EfileIndexTable = preloaded_orm(table)
+    assert list(orm.eins) == ["0123456789"]
+
+@pytest.mark.parametrize("table", tables)
+def test_iter(preloaded_orm, table, filing_original, alpha_filing_1, alpha_filing_2):
+    orm: EfileIndexTable = preloaded_orm(table)
+    orm.upsert(filing_original)
+    #orm.commit()
+    expected: List = [alpha_filing_1, alpha_filing_2, filing_original]
+    actual: List = sorted(orm, key=lambda f: f.record_id)
+    assert actual == expected

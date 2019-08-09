@@ -24,12 +24,14 @@ class EfileIndexTable(Iterable):
         values: Tuple = dataclasses.astuple(filing)
         cursor: Cursor = self.conn.cursor()
         cursor.execute(query, values)
+        self.conn.commit()
 
     def delete_if_exists(self, irs_efile_id: str):
         """Deletes the record from the table, if it exists."""
         query: str = "DELETE FROM %s WHERE irs_efile_id = ?" % self.table_name
         cursor: Cursor = self.conn.cursor()
         cursor.execute(query, (irs_efile_id,))
+        self.conn.commit()
 
     def _filings_by_key(self, key_name: str, key_value: str) -> Iterator[Filing]:
         query: str = "SELECT * FROM %s WHERE %s = ?" % (self.table_name, key_name)

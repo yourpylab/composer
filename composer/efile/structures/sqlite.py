@@ -5,7 +5,7 @@ from typing import Dict, Iterator, Optional, Tuple
 
 from attr import dataclass
 
-from composer.efile.filing import Filing
+from composer.efile.structures.filing import Filing
 
 @dataclass
 class EfileIndexTable(Iterable):

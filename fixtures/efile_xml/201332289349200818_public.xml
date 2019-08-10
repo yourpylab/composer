@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return returnVersion="2010v3.4" xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ReturnHeader binaryAttachmentCount="0">
+    <Timestamp>2013-08-16T17:23:00-07:00</Timestamp>
+    <TaxPeriodEndDate>2010-12-31</TaxPeriodEndDate>
+    <ReturnType>990EZ</ReturnType>
+    <TaxPeriodBeginDate>2010-01-01</TaxPeriodBeginDate>
+    <Filer>
+      <EIN>260687839</EIN>
+      <Name>
+        <BusinessNameLine1>Cooking With Kids Foundation</BusinessNameLine1>
+      </Name>
+      <NameControl>COOK</NameControl>
+      <Phone>9259321114</Phone>
+      <USAddress>
+        <AddressLine1>1571 Ptarmigan Drive 1A</AddressLine1>
+        <City>Walnut Creek</City>
+        <State>CA</State>
+        <ZIPCode>945955315</ZIPCode>
+      </USAddress>
+    </Filer>
+    <Officer>
+      <Name>Stephen Smith</Name>
+      <Title>CFO</Title>
+      <Phone>9255133015</Phone>
+      <DateSigned>2013-08-16</DateSigned>
+    </Officer>
+    <TaxYear>2010</TaxYear>
+    <BuildTS>2016-02-24 21:20:13Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCount="5">
+    <IRS990EZ documentId="R000001" referenceDocumentId="R000004 R000005" softwareId="10000077" softwareVersion="v1.00">
+      <AmendedReturn>X</AmendedReturn>
+      <MethodOfAccountingCash>X</MethodOfAccountingCash>
+      <ScheduleBNotRequired>X</ScheduleBNotRequired>
+      <Organization501c3 referenceDocumentId="R000002">X</Organization501c3>
+      <GrossReceipts>2652</GrossReceipts>
+      <InfoInScheduleOPartI>X</InfoInScheduleOPartI>
+      <ContributionsGiftsGrantsEtc>100</ContributionsGiftsGrantsEtc>
+      <ProgramServiceRevenue>2552</ProgramServiceRevenue>
+      <MembershipDues>0</MembershipDues>
+      <InvestmentIncome>0</InvestmentIncome>
+      <GrossAmountFromSaleOfAssets>0</GrossAmountFromSaleOfAssets>
+      <CostOtherBasisAndSalesExpenses>0</CostOtherBasisAndSalesExpenses>
+      <GainOrLossFromSaleOfAssets>0</GainOrLossFromSaleOfAssets>
+      <GamingGrossIncome>0</GamingGrossIncome>
+      <FundraisingGrossIncome contributionsReportedOnLine1a="0">0</FundraisingGrossIncome>
+      <SpecialEventsDirectExpenses>0</SpecialEventsDirectExpenses>
+      <SpecialEventsNetIncomeLoss>0</SpecialEventsNetIncomeLoss>
+      <GrossSalesOfInventory>0</GrossSalesOfInventory>
+      <CostOfGoodsSold>0</CostOfGoodsSold>
+      <GroProfitLossSalesOfInventory>0</GroProfitLossSalesOfInventory>
+      <OtherRevenueTotal>0</OtherRevenueTotal>
+      <TotalRevenue>2652</TotalRevenue>
+      <GrantsAndSimilarAmountsPaid>0</GrantsAndSimilarAmountsPaid>
+      <BenefitsPaidToOrForMembers>0</BenefitsPaidToOrForMembers>
+      <SalariesOtherCompEmplBenefits>24</SalariesOtherCompEmplBenefits>
+      <FeesAndOthPymtToIndContractors>20</FeesAndOthPymtToIndContractors>
+      <OccupancyRentUtilitiesAndMaint>0</OccupancyRentUtilitiesAndMaint>
+      <PrintingPublicationsPostage>44</PrintingPublicationsPostage>
+      <OtherExpensesTotal>1390</OtherExpensesTotal>
+      <TotalExpenses>1478</TotalExpenses>
+      <ExcessOrDeficitForYear>1174</ExcessOrDeficitForYear>
+      <NetAssetsOrFundBalancesBOY>-3792</NetAssetsOrFundBalancesBOY>
+      <OtherChangesInNetAssets>-1174</OtherChangesInNetAssets>
+      <NetAssetsOrFundBalancesEOY>-3792</NetAssetsOrFundBalancesEOY>
+      <InfoInScheduleOPartII>X</InfoInScheduleOPartII>
+      <CashSavingsAndInvestments>
+        <BOY>0</BOY>
+        <EOY>0</EOY>
+      </CashSavingsAndInvestments>
+      <LandAndBuildings>
+        <BOY>0</BOY>
+        <EOY>0</EOY>
+      </LandAndBuildings>
+      <OtherAssetsTotal>
+        <BOY>0</BOY>
+        <EOY>0</EOY>
+      </OtherAssetsTotal>
+      <TotalAssets>
+        <BOY>0</BOY>
+        <EOY>0</EOY>
+      </TotalAssets>
+      <SumOfTotalLiabilities>
+        <BOY>3792</BOY>
+        <EOY>3792</EOY>
+      </SumOfTotalLiabilities>
+      <NetAssetsOrFundBalances>
+        <BOY>-3792</BOY>
+        <EOY>-3792</EOY>
+      </NetAssetsOrFundBalances>
+      <PrimaryExemptPurpose>Promote healthy eating thru Cooking With Kids classes</PrimaryExemptPurpose>
+      <ProgramServiceAccomplishment>
+        <DescriptionProgramServiceAccom>Foundation was primarily engaged in organizational activities</DescriptionProgramServiceAccom>
+        <GrantsAndAllocations>0</GrantsAndAllocations>
+        <ProgramServiceExpenses>0</ProgramServiceExpenses>
+      </ProgramServiceAccomplishment>
+      <TotalProgramServiceExpenses>0</TotalProgramServiceExpenses>
+      <OfficerDirectorTrusteeKeyEmpl>
+        <PersonName>Linda Kay Rexroat</PersonName>
+        <AddressUS>
+          <AddressLine1>1571 Ptarmigan Drive 1A</AddressLine1>
+          <City>Walnut Creek</City>
+          <State>CA</State>
+          <ZIPCode>945955315</ZIPCode>
+        </AddressUS>
+        <Title>President, CEO, and Director</Title>
+        <AvgHoursPerWkDevotedToPosition>40</AvgHoursPerWkDevotedToPosition>
+        <Compensation>0</Compensation>
+        <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+        <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+      </OfficerDirectorTrusteeKeyEmpl>
+      <OfficerDirectorTrusteeKeyEmpl>
+        <PersonName>John Rexroat</PersonName>
+        <AddressUS>
+          <AddressLine1>1571 Ptarmigan Drive 1A</AddressLine1>
+          <City>Walnut Creek</City>
+          <State>CA</State>
+          <ZIPCode>945955315</ZIPCode>
+        </AddressUS>
+        <Title>Secretary and Director</Title>
+        <AvgHoursPerWkDevotedToPosition>10</AvgHoursPerWkDevotedToPosition>
+        <Compensation>0</Compensation>
+        <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+        <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+      </OfficerDirectorTrusteeKeyEmpl>
+      <OfficerDirectorTrusteeKeyEmpl>
+        <PersonName>Stephen F Smith</PersonName>
+        <AddressUS>
+          <AddressLine1>1483 Bismarck Lane</AddressLine1>
+          <City>Brentwood</City>
+          <State>CA</State>
+          <ZIPCode>945136917</ZIPCode>
+        </AddressUS>
+        <Title>CFO and Director</Title>
+        <AvgHoursPerWkDevotedToPosition>2</AvgHoursPerWkDevotedToPosition>
+        <Compensation>0</Compensation>
+        <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+        <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+      </OfficerDirectorTrusteeKeyEmpl>
+      <OfficerDirectorTrusteeKeyEmpl>
+        <PersonName>Lou Ann Berardi</PersonName>
+        <AddressUS>
+          <AddressLine1>1748 Oakmont Drive</AddressLine1>
+          <City>Walnut Creek</City>
+          <State>CA</State>
+          <ZIPCode>945952012</ZIPCode>
+        </AddressUS>
+        <Title>Director</Title>
+        <AvgHoursPerWkDevotedToPosition>4</AvgHoursPerWkDevotedToPosition>
+        <Compensation>0</Compensation>
+        <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+        <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+      </OfficerDirectorTrusteeKeyEmpl>
+      <ActivitiesNotPreviouslyRpt>0</ActivitiesNotPreviouslyRpt>
+      <MadeChangesToOrgnzngEtcDoc>0</MadeChangesToOrgnzngEtcDoc>
+      <OrganizationHadUBI>0</OrganizationHadUBI>
+      <OrganizationDissolvedEtc>0</OrganizationDissolvedEtc>
+      <DirectIndirectPoliticalExpend>0</DirectIndirectPoliticalExpend>
+      <DidOrgFileForm1120POLThisYear>0</DidOrgFileForm1120POLThisYear>
+      <MadeLoansToFromOfficers>1</MadeLoansToFromOfficers>
+      <LoansToFromOfficers referenceDocumentId="R000003">3792</LoansToFromOfficers>
+      <TaxImposedUnderIRC4911>0</TaxImposedUnderIRC4911>
+      <TaxImposedUnderIRC4912>0</TaxImposedUnderIRC4912>
+      <TaxImposedUnderIRC4955>0</TaxImposedUnderIRC4955>
+      <EngagedInExcessBenefitTrans referenceDocumentId="R000003">0</EngagedInExcessBenefitTrans>
+      <AmountOfTaxImposedOnOrgMgr>0</AmountOfTaxImposedOnOrgMgr>
+      <AmountOfTaxReimbursedByOrg>0</AmountOfTaxReimbursedByOrg>
+      <ProhibitedTaxShelterTrans>0</ProhibitedTaxShelterTrans>
+      <StatesWhereCopyOfReturnIsFiled>CA</StatesWhereCopyOfReturnIsFiled>
+      <TheBooksAreInCareOf>
+        <NamePerson>John Rexroat</NamePerson>
+        <AddressUS>
+          <AddressLine1>1571 Ptarmigan Drive 1A</AddressLine1>
+          <City>Walnut Creek</City>
+          <State>CA</State>
+          <ZIPCode>945955315</ZIPCode>
+        </AddressUS>
+        <TelephoneNumber>9253236915</TelephoneNumber>
+      </TheBooksAreInCareOf>
+      <ForeignFinancialAccount>0</ForeignFinancialAccount>
+      <ForeignOffice>0</ForeignOffice>
+      <MaintainAnyDonorAdvisedFunds>0</MaintainAnyDonorAdvisedFunds>
+      <DoesOrgHaveHospital>0</DoesOrgHaveHospital>
+      <TanningServicesProvided>0</TanningServicesProvided>
+      <RelatedOrgControlledEntity>0</RelatedOrgControlledEntity>
+      <EngagePoliticalCmpgnActivities>0</EngagePoliticalCmpgnActivities>
+      <EngageInLobbyingActivities>0</EngageInLobbyingActivities>
+      <OperatingSchool>0</OperatingSchool>
+      <TrnsfrsExemptNonCharRelatedOrg>0</TrnsfrsExemptNonCharRelatedOrg>
+      <PartVIOfCompOfHighestPaidEmpl>NONE</PartVIOfCompOfHighestPaidEmpl>
+      <PartVIAHghstPaidCntrctProfSer>NONE</PartVIAHghstPaidCntrctProfSer>
+      <FiledScheduleA>1</FiledScheduleA>
+    </IRS990EZ>
+    <IRS990ScheduleA documentId="R000002" softwareId="10000077" softwareVersion="v1.00">
+      <PubliclySupportedOrg509a2>X</PubliclySupportedOrg509a2>
+      <GiftsGrantsContribReceived509>
+        <CurrentTaxYear>100</CurrentTaxYear>
+        <Total>100</Total>
+      </GiftsGrantsContribReceived509>
+      <GrossReceiptsFromAdmissions>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </GrossReceiptsFromAdmissions>
+      <GrossReceiptsFromNonUBI>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </GrossReceiptsFromNonUBI>
+      <TaxRevLeviedForOrgBenefit509>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </TaxRevLeviedForOrgBenefit509>
+      <ValueOfSvcsFcltsFurnishdByGovt>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </ValueOfSvcsFcltsFurnishdByGovt>
+      <Total509>
+        <CurrentTaxYearMinus4Years>0</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>0</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>100</CurrentTaxYear>
+        <Total>100</Total>
+      </Total509>
+      <AmtsRecdFromDisqualPersons>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </AmtsRecdFromDisqualPersons>
+      <AmtsFromSubstContributors>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </AmtsFromSubstContributors>
+      <SupportFromDQPsEtc>
+        <CurrentTaxYearMinus4Years>0</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>0</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </SupportFromDQPsEtc>
+      <PublicSupportTotal509>100</PublicSupportTotal509>
+      <GrossInvestmentIncome509>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </GrossInvestmentIncome509>
+      <Post1975UBTI>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </Post1975UBTI>
+      <InvestmentIncomeAndUBTI>
+        <CurrentTaxYearMinus4Years>0</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>0</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </InvestmentIncomeAndUBTI>
+      <NetIncomeFromOtherUBI>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </NetIncomeFromOtherUBI>
+      <OtherIncome509>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </OtherIncome509>
+      <TotalSupportTotal>
+        <CurrentTaxYearMinus4Years>0</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>0</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>100</CurrentTaxYear>
+        <Total>100</Total>
+      </TotalSupportTotal>
+      <First5Years509>X</First5Years509>
+    </IRS990ScheduleA>
+    <IRS990ScheduleL documentId="R000003" softwareId="10000077" softwareVersion="v1.00">
+      <LoanTable>
+        <NamePerson>Linda Kay Rexroat</NamePerson>
+        <PurposeOfLoan>Startup Expenses incurred in 2009</PurposeOfLoan>
+        <LoanToOrganization>X</LoanToOrganization>
+        <OriginalPrincipalAmount>3792</OriginalPrincipalAmount>
+        <BalanceDue>3792</BalanceDue>
+        <Default>0</Default>
+        <ApprovedByBoard>0</ApprovedByBoard>
+        <WrittenAgreement>0</WrittenAgreement>
+      </LoanTable>
+      <TotalBalanceDue>3792</TotalBalanceDue>
+    </IRS990ScheduleL>
+    <IRS990ScheduleO documentId="R000004" softwareId="10000077" softwareVersion="v1.00">
+      <GeneralExplanation>
+        <Identifier>F99Z_P00_S00_L0B</Identifier>
+        <ReturnReference>Form 990-EZ, Header, Line B</ReturnReference>
+        <Explanation>To reconcile with separate books established for Foundation subsequent to 2010 and account for startup funding from Executive Director</Explanation>
+      </GeneralExplanation>
+      <GeneralExplanation>
+        <Identifier>F99Z_P01_S00_L16</Identifier>
+        <ReturnReference>Form 990-EZ, Part I, Line 16</ReturnReference>
+        <Explanation>Description;Amount^Foundation Meeting Expenses;716|Key Person Insurance;397|Promotions and Marketing;257|Web Site Expenses;20^Total;1390^</Explanation>
+      </GeneralExplanation>
+      <GeneralExplanation>
+        <Identifier>F99Z_P01_S00_L20</Identifier>
+        <ReturnReference>Form 990-EZ, Part I, Line 20</ReturnReference>
+        <Explanation>To account for fact that Foundation did not have separate checking account at end of 2010</Explanation>
+      </GeneralExplanation>
+      <GeneralExplanation>
+        <Identifier>F99Z_P02_S00_L26</Identifier>
+        <ReturnReference>Form 990-EZ, Part II, Line 26</ReturnReference>
+        <Explanation>Description;EOY Amount^Loan From Executive Director for Startup Expenses;3792^Total;3792^</Explanation>
+      </GeneralExplanation>
+    </IRS990ScheduleO>
+    <ReasonableCauseExplanation documentId="R000005" softwareId="10000077" softwareVersion="v1.00">
+      <Explanation>This is an Amended filing for a previous return filed timely</Explanation>
+    </ReasonableCauseExplanation>
+  </ReturnData>
+</Return>

@@ -5,8 +5,8 @@ from typing import List, Set, Tuple
 
 import pytest
 
-from composer.efile.filing import Filing
-from composer.efile.sqlite import EfileIndexTable
+from composer.efile.structures.filing import Filing
+from composer.efile.structures.sqlite import EfileIndexTable
 
 tables: List = ["latest_filings", "duplicates"]
 

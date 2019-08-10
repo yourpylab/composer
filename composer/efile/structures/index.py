@@ -3,8 +3,8 @@ from collections import defaultdict, deque
 from dataclasses import field, dataclass
 from typing import Iterator, Dict, Tuple, List, Deque
 
-from composer.efile.filing import Filing
-from composer.efile.sqlite import EfileIndexTable
+from composer.efile.structures.filing import Filing
+from composer.efile.structures.sqlite import EfileIndexTable
 
 @dataclass
 class EfileIndex:

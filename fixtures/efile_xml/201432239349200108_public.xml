@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return returnVersion="2013v3.0" xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2014-08-10T22:23:11-07:00</ReturnTs>
+    <TaxPeriodEndDt>2013-12-31</TaxPeriodEndDt>
+    <ReturnTypeCd>990EZ</ReturnTypeCd>
+    <TaxPeriodBeginDt>2013-01-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>260687839</EIN>
+      <BusinessName>
+        <BusinessNameLine1>Cooking With Kids Foundation</BusinessNameLine1>
+      </BusinessName>
+      <BusinessNameControlTxt>COOK</BusinessNameControlTxt>
+      <PhoneNum>9259321114</PhoneNum>
+      <USAddress>
+        <AddressLine1>3762 Sundale Road</AddressLine1>
+        <City>Lafayette</City>
+        <State>CA</State>
+        <ZIPCode>945493537</ZIPCode>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>Stephen Smith</PersonNm>
+      <PersonTitleTxt>CFO</PersonTitleTxt>
+      <PhoneNum>9255133015</PhoneNum>
+      <SignatureDt>2014-08-10</SignatureDt>
+    </BusinessOfficerGrp>
+    <TaxYr>2013</TaxYr>
+    <BuildTS>2015-11-30 17:44:51Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCount="6">
+    <IRS990EZ documentId="R000001" referenceDocumentId="R000005 R000006" softwareId="13000241" softwareVersion="v1.00">
+      <MethodOfAccountingAccrualInd>X</MethodOfAccountingAccrualInd>
+      <WebsiteAddressTxt>www.cwkf.org</WebsiteAddressTxt>
+      <Organization501c3Ind referenceDocumentId="R000002">X</Organization501c3Ind>
+      <TypeOfOrganizationCorpInd>X</TypeOfOrganizationCorpInd>
+      <GrossReceiptsAmt>28270</GrossReceiptsAmt>
+      <InfoInScheduleOPartIInd>X</InfoInScheduleOPartIInd>
+      <ContributionsGiftsGrantsEtcAmt>1000</ContributionsGiftsGrantsEtcAmt>
+      <ProgramServiceRevenueAmt>27270</ProgramServiceRevenueAmt>
+      <MembershipDuesAmt>0</MembershipDuesAmt>
+      <InvestmentIncomeAmt>0</InvestmentIncomeAmt>
+      <SaleOfAssetsGrossAmt>0</SaleOfAssetsGrossAmt>
+      <CostOrOtherBasisExpenseSaleAmt>0</CostOrOtherBasisExpenseSaleAmt>
+      <GainOrLossFromSaleOfAssetsAmt>0</GainOrLossFromSaleOfAssetsAmt>
+      <GamingGrossIncomeAmt>0</GamingGrossIncomeAmt>
+      <FundraisingGrossIncomeAmt fndrsngEventContriPrevRptAmt="0">0</FundraisingGrossIncomeAmt>
+      <SpecialEventsDirectExpensesAmt>0</SpecialEventsDirectExpensesAmt>
+      <SpecialEventsNetIncomeLossAmt>0</SpecialEventsNetIncomeLossAmt>
+      <GrossSalesOfInventoryAmt>0</GrossSalesOfInventoryAmt>
+      <CostOfGoodsSoldAmt>0</CostOfGoodsSoldAmt>
+      <GrossProfitLossSlsOfInvntryAmt>0</GrossProfitLossSlsOfInvntryAmt>
+      <OtherRevenueTotalAmt>0</OtherRevenueTotalAmt>
+      <TotalRevenueAmt>28270</TotalRevenueAmt>
+      <GrantsAndSimilarAmountsPaidAmt>0</GrantsAndSimilarAmountsPaidAmt>
+      <BenefitsPaidToOrForMembersAmt>0</BenefitsPaidToOrForMembersAmt>
+      <SalariesOtherCompEmplBnftAmt>1525</SalariesOtherCompEmplBnftAmt>
+      <FeesAndOtherPymtToIndCntrctAmt>9200</FeesAndOtherPymtToIndCntrctAmt>
+      <OccupancyRentUtltsAndMaintAmt>945</OccupancyRentUtltsAndMaintAmt>
+      <PrintingPublicationsPostageAmt>0</PrintingPublicationsPostageAmt>
+      <OtherExpensesTotalAmt>11572</OtherExpensesTotalAmt>
+      <TotalExpensesAmt>23242</TotalExpensesAmt>
+      <ExcessOrDeficitForYearAmt>5028</ExcessOrDeficitForYearAmt>
+      <NetAssetsOrFundBalancesBOYAmt>-2905</NetAssetsOrFundBalancesBOYAmt>
+      <OtherChangesInNetAssetsAmt>0</OtherChangesInNetAssetsAmt>
+      <NetAssetsOrFundBalancesEOYAmt>2123</NetAssetsOrFundBalancesEOYAmt>
+      <InfoInScheduleOPartIIInd>X</InfoInScheduleOPartIIInd>
+      <CashSavingsAndInvestmentsGrp>
+        <BOYAmt>3382</BOYAmt>
+        <EOYAmt>3908</EOYAmt>
+      </CashSavingsAndInvestmentsGrp>
+      <LandAndBuildingsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </LandAndBuildingsGrp>
+      <OtherAssetsTotalDetail>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </OtherAssetsTotalDetail>
+      <Form990TotalAssetsGrp>
+        <BOYAmt>3382</BOYAmt>
+        <EOYAmt>3908</EOYAmt>
+      </Form990TotalAssetsGrp>
+      <SumOfTotalLiabilitiesGrp>
+        <BOYAmt>6287</BOYAmt>
+        <EOYAmt>1785</EOYAmt>
+      </SumOfTotalLiabilitiesGrp>
+      <NetAssetsOrFundBalancesGrp>
+        <BOYAmt>-2905</BOYAmt>
+        <EOYAmt>2123</EOYAmt>
+      </NetAssetsOrFundBalancesGrp>
+      <PrimaryExemptPurposeTxt>Promote healthy eating thru Cooking With Kids Classes</PrimaryExemptPurposeTxt>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>Taught numerous cooking classes to young children</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>0</GrantsAndAllocationsAmt>
+        <ProgramServiceExpensesAmt>12626</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <TotalProgramServiceExpensesAmt>12626</TotalProgramServiceExpensesAmt>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>Linda Kay Rexroat</PersonNm>
+        <TitleTxt>President, CEO, &amp; Director</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>40</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>1200</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>John Rexroat</PersonNm>
+        <TitleTxt>Secretary and Director</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>10</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>Stephen F Smith</PersonNm>
+        <TitleTxt>CFO and Director</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>4</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>Lou Ann Berardi</PersonNm>
+        <TitleTxt>Director</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>4</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <ActivitiesNotPreviouslyRptInd>0</ActivitiesNotPreviouslyRptInd>
+      <ChgMadeToOrgnzngDocNotRptInd>0</ChgMadeToOrgnzngDocNotRptInd>
+      <OrganizationHadUBIInd>0</OrganizationHadUBIInd>
+      <SubjectToProxyTaxInd>0</SubjectToProxyTaxInd>
+      <OrganizationDissolvedEtcInd>0</OrganizationDissolvedEtcInd>
+      <DirectIndirectPltclExpendAmt>0</DirectIndirectPltclExpendAmt>
+      <Form1120PolFiledInd>0</Form1120PolFiledInd>
+      <MadeLoansToFromOfficersInd>1</MadeLoansToFromOfficersInd>
+      <LoansToFromOfficersAmt referenceDocumentId="R000004">1785</LoansToFromOfficersAmt>
+      <TaxImposedUnderIRC4911Amt>0</TaxImposedUnderIRC4911Amt>
+      <TaxImposedUnderIRC4912Amt>0</TaxImposedUnderIRC4912Amt>
+      <TaxImposedUnderIRC4955Amt>0</TaxImposedUnderIRC4955Amt>
+      <EngagedInExcessBenefitTransInd referenceDocumentId="R000004">0</EngagedInExcessBenefitTransInd>
+      <TaxImposedOnOrganizationMgrAmt>0</TaxImposedOnOrganizationMgrAmt>
+      <TaxReimbursedByOrganizationAmt>0</TaxReimbursedByOrganizationAmt>
+      <ProhibitedTaxShelterTransInd>0</ProhibitedTaxShelterTransInd>
+      <StatesWhereCopyOfReturnIsFldCd>CA</StatesWhereCopyOfReturnIsFldCd>
+      <BooksInCareOfDetail>
+        <PersonNm>Lynda Rexroat</PersonNm>
+        <USAddress>
+          <AddressLine1>3762 Sundale Road</AddressLine1>
+          <City>Lafayette</City>
+          <State>CA</State>
+          <ZIPCode>945493537</ZIPCode>
+        </USAddress>
+        <PhoneNum>9252129771</PhoneNum>
+      </BooksInCareOfDetail>
+      <ForeignFinancialAccountInd>0</ForeignFinancialAccountInd>
+      <ForeignOfficeInd>0</ForeignOfficeInd>
+      <DonorAdvisedFndsInd>0</DonorAdvisedFndsInd>
+      <OperateHospitalInd>0</OperateHospitalInd>
+      <TanningServicesProvidedInd>0</TanningServicesProvidedInd>
+      <RelatedOrganizationCtrlEntInd>0</RelatedOrganizationCtrlEntInd>
+      <TransactionWithControlEntInd>0</TransactionWithControlEntInd>
+      <PoliticalCampaignActyInd>0</PoliticalCampaignActyInd>
+      <LobbyingActivitiesInd>0</LobbyingActivitiesInd>
+      <SchoolOperatingInd>0</SchoolOperatingInd>
+      <TrnsfrExmptNonChrtblRltdOrgInd>0</TrnsfrExmptNonChrtblRltdOrgInd>
+      <PartVIOfCompOfHghstPdEmplTxt>NONE</PartVIOfCompOfHghstPdEmplTxt>
+      <PartVIHghstPdCntrctProfSrvcTxt>NONE</PartVIHghstPdCntrctProfSrvcTxt>
+      <FiledScheduleAInd>1</FiledScheduleAInd>
+    </IRS990EZ>
+    <IRS990ScheduleA documentId="R000002" softwareId="13000241" softwareVersion="v1.00">
+      <PubliclySupportedOrg509a2Ind>X</PubliclySupportedOrg509a2Ind>
+      <GiftsGrantsContrisRcvd509Grp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>2814</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>1000</CurrentTaxYearAmt>
+        <TotalAmt>3814</TotalAmt>
+      </GiftsGrantsContrisRcvd509Grp>
+      <GrossReceiptsAdmissionsGrp>
+        <CurrentTaxYearMinus3YearsAmt>2552</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>18394</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>21818</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>27270</CurrentTaxYearAmt>
+        <TotalAmt>70034</TotalAmt>
+      </GrossReceiptsAdmissionsGrp>
+      <GrossReceiptsNonUnrltBusGrp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GrossReceiptsNonUnrltBusGrp>
+      <TaxRevLeviedOrgnztnlBnft509Grp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </TaxRevLeviedOrgnztnlBnft509Grp>
+      <GovtFurnSrvcFcltsVl509Grp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GovtFurnSrvcFcltsVl509Grp>
+      <Total509Grp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>2552</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>18394</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>24632</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>28270</CurrentTaxYearAmt>
+        <TotalAmt>73848</TotalAmt>
+      </Total509Grp>
+      <AmountsRcvdDsqlfyPersonGrp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </AmountsRcvdDsqlfyPersonGrp>
+      <SubstantialContributorsAmtGrp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </SubstantialContributorsAmtGrp>
+      <SubstAndDsqlfyPrsnsTotGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </SubstAndDsqlfyPrsnsTotGrp>
+      <PublicSupportTotal509Amt>73848</PublicSupportTotal509Amt>
+      <GrossInvestmentIncome509Grp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GrossInvestmentIncome509Grp>
+      <Post1975UBTIGrp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </Post1975UBTIGrp>
+      <InvestmentIncomeAndUBTIGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </InvestmentIncomeAndUBTIGrp>
+      <NetIncomeFromOtherUBIGrp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </NetIncomeFromOtherUBIGrp>
+      <OtherIncome509Grp>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <TotalAmt>0</TotalAmt>
+      </OtherIncome509Grp>
+      <TotalSupportCalendarYearGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>2552</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>18394</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>24632</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>28270</CurrentTaxYearAmt>
+        <TotalAmt>73848</TotalAmt>
+      </TotalSupportCalendarYearGrp>
+      <First5Years509Ind>X</First5Years509Ind>
+    </IRS990ScheduleA>
+    <IRS990ScheduleB documentId="R000003" softwareId="13000241" softwareVersion="v1.00">
+      <ContributorInformationGrp>
+        <ContributorNum>RESTRICTED</ContributorNum>
+        <ContributorBusinessName>
+          <BusinessNameLine1>RESTRICTED</BusinessNameLine1>
+        </ContributorBusinessName>
+        <ContributorUSAddress>
+          <AddressLine1>RESTRICTED</AddressLine1>
+          <AddressLine2>RESTRICTED</AddressLine2>
+          <City>RESTRICTED</City>
+          <State>RESTRICTED</State>
+          <ZIPCode>RESTRICTED</ZIPCode>
+        </ContributorUSAddress>
+        <TotalContributionsAmt>RESTRICTED</TotalContributionsAmt>
+      </ContributorInformationGrp>
+    </IRS990ScheduleB>
+    <IRS990ScheduleL documentId="R000004" softwareId="13000241" softwareVersion="v1.00">
+      <LoansBtwnOrgInterestedPrsnGrp>
+        <PersonNm>Lynda Kay Rexroat</PersonNm>
+        <RelationshipWithOrgTxt>Executive Director</RelationshipWithOrgTxt>
+        <LoanPurposeTxt>Organizational Expenses and coverage of shortfalls</LoanPurposeTxt>
+        <LoanToOrganizationInd>X</LoanToOrganizationInd>
+        <OriginalPrincipalAmt>3792</OriginalPrincipalAmt>
+        <BalanceDueAmt>1785</BalanceDueAmt>
+        <DefaultInd>0</DefaultInd>
+        <BoardOrCommitteeApprovalInd>1</BoardOrCommitteeApprovalInd>
+        <WrittenAgreementInd>0</WrittenAgreementInd>
+      </LoansBtwnOrgInterestedPrsnGrp>
+      <TotalBalanceDueAmt>1785</TotalBalanceDueAmt>
+    </IRS990ScheduleL>
+    <IRS990ScheduleO documentId="R000005" softwareId="13000241" softwareVersion="v1.00">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990-EZ, Part I, Line 16</FormAndLineReferenceDesc>
+        <ExplanationTxt>Description;Amount^Corporate Registration Fees;110|Automobile Expense;2890|Bank Service Charges;13|Computer and Internet Expenses;436|Conferences and Meetings;20|Fundraiser Expenses;180|Dues and Subscriptions;205|Gifts Acknowledgements Connecti;36|Key Man Insurance;529|Auto Insurance;289|Shared Revenue;194|Consumables Food;2444|Supplies Cooking Class;635|Equipment Small Tools;62|Material Fee Offset;40|Mandatory Testing for Teaching;184|Ingredients Research;23|Other Supplies;133|Office Expense;1373|Printing and Reproduction;28|Small Tools and Equipment;592|Telephone Expense;868|Reimbursement;288^Total;11572^</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990-EZ, Part II, Line 26</FormAndLineReferenceDesc>
+        <ExplanationTxt>Advanced by Executive Director for startup expenses and to cover shortfalls</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+    <ReasonableCauseExplanation documentId="R000006" softwareId="13000241" softwareVersion="v1.00">
+      <ExplanationTxt>Extension granted.</ExplanationTxt>
+    </ReasonableCauseExplanation>
+  </ReturnData>
+</Return>

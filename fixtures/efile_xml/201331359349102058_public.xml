@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.irs.gov/efile" returnVersion="2012v2.1">
+  <ReturnHeader binaryAttachmentCount="0">
+    <Timestamp>2013-05-15T15:01:17-05:00</Timestamp>
+    <TaxPeriodEndDate>2012-12-31</TaxPeriodEndDate>
+    <PreparerFirm>
+      <EIN>310800053</EIN>
+      <PreparerFirmBusinessName>
+        <BusinessNameLine1>CLARK SCHAEFER HACKETT AND CO</BusinessNameLine1>
+      </PreparerFirmBusinessName>
+      <PreparerFirmUSAddress>
+        <AddressLine1>ONE EAST FOURTH ST SUITE 1200</AddressLine1>
+        <City>CINCINNATI</City>
+        <State>OH</State>
+        <ZIPCode>45202</ZIPCode>
+      </PreparerFirmUSAddress>
+    </PreparerFirm>
+    <ReturnType>990PF</ReturnType>
+    <TaxPeriodBeginDate>2012-01-01</TaxPeriodBeginDate>
+    <Filer>
+      <EIN>208419458</EIN>
+      <Name>
+        <BusinessNameLine1>THE GROSSHUTTON FAMILY FOUNDATION</BusinessNameLine1>
+      </Name>
+      <NameControl>GROS</NameControl>
+      <Phone>5137856060</Phone>
+      <USAddress>
+        <AddressLine1>9435 WATERSTONE BLVD NO 390</AddressLine1>
+        <City>CINCINNATI</City>
+        <State>OH</State>
+        <ZIPCode>45249</ZIPCode>
+      </USAddress>
+    </Filer>
+    <Officer>
+      <Name>SANDRA GROSS</Name>
+      <Title>PRESIDENT</Title>
+      <Phone>5137856060</Phone>
+      <DateSigned>2013-05-02</DateSigned>
+      <AuthorizeThirdParty>1</AuthorizeThirdParty>
+    </Officer>
+    <Preparer>
+      <Name>A E SCHWEIER CPA</Name>
+      <PTIN>P00294882</PTIN>
+      <Phone>5132413111</Phone>
+      <DatePrepared>2013-04-26</DatePrepared>
+    </Preparer>
+    <TaxYear>2012</TaxYear>
+    <BuildTS>2016-02-25 16:41:14Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCount="7">
+    <IRS990PF documentId="RetDoc1235000001">
+      <ExemptPF>X</ExemptPF>
+      <FMVAssetsEOY>436032</FMVAssetsEOY>
+      <MethodOfAccountingCash>X</MethodOfAccountingCash>
+      <AnalysisOfRevenueAndExpenses>
+        <NotRequiredToAttachScheduleB>X</NotRequiredToAttachScheduleB>
+        <DividendsRevAndExpnss>19141</DividendsRevAndExpnss>
+        <DividendsNetInvstIncm>19141</DividendsNetInvstIncm>
+        <NetGainSaleAssetsRevAndExpnss>139963</NetGainSaleAssetsRevAndExpnss>
+        <GrossSalesPrice>412326</GrossSalesPrice>
+        <CapitalGainNetIncmNetInvstIncm>204100</CapitalGainNetIncmNetInvstIncm>
+        <OtherIncomeRevAndExpnss referenceDocumentId="RetDoc2001500001">280</OtherIncomeRevAndExpnss>
+        <OtherIncomeNetInvstIncm>280</OtherIncomeNetInvstIncm>
+        <TotalRevenueAndExpenses>159384</TotalRevenueAndExpenses>
+        <TotalNetInvestmentIncome>223521</TotalNetInvestmentIncome>
+        <CompOfcrDirTrstRevAndExpnss>0</CompOfcrDirTrstRevAndExpnss>
+        <CompOfcrDirTrstNetInvstIncm>0</CompOfcrDirTrstNetInvstIncm>
+        <CompOfcrDirTrstDsbrsChrtblPrps>0</CompOfcrDirTrstDsbrsChrtblPrps>
+        <LegalFeesRevAndExpnss referenceDocumentId="RetDoc2002100001">879</LegalFeesRevAndExpnss>
+        <LegalFeesNetInvstIncm>0</LegalFeesNetInvstIncm>
+        <LegalFeesDsbrsChrtblPrps>0</LegalFeesDsbrsChrtblPrps>
+        <AccountingFeesRevAndExpnss referenceDocumentId="RetDoc2002200001">2600</AccountingFeesRevAndExpnss>
+        <AccountingFeesNetInvstIncm>0</AccountingFeesNetInvstIncm>
+        <AccountingFeesDsbrsChrtblPrps>0</AccountingFeesDsbrsChrtblPrps>
+        <TaxesRevAndExpnss referenceDocumentId="RetDoc2002500001">917</TaxesRevAndExpnss>
+        <TaxesNetInvstIncm>0</TaxesNetInvstIncm>
+        <TaxesDsbrsChrtblPrps>200</TaxesDsbrsChrtblPrps>
+        <TotOprExpensesRevAndExpnss>4396</TotOprExpensesRevAndExpnss>
+        <TotOprExpensesNetInvstIncm>0</TotOprExpensesNetInvstIncm>
+        <TotOprExpensesDsbrsChrtblPrps>200</TotOprExpensesDsbrsChrtblPrps>
+        <ContriGiftsPaidRevAndExpnss>435000</ContriGiftsPaidRevAndExpnss>
+        <ContriGiftsPaidDsbrsChrtblPrps>435000</ContriGiftsPaidDsbrsChrtblPrps>
+        <TotalExpensesRevAndExpnss>439396</TotalExpensesRevAndExpnss>
+        <TotalExpensesNetInvstIncm>0</TotalExpensesNetInvstIncm>
+        <TotalExpensesDsbrsChrtblPrps>435200</TotalExpensesDsbrsChrtblPrps>
+        <ExcessOfRevenueOverExpenses>-280012</ExcessOfRevenueOverExpenses>
+        <NetInvestmentIncome>223521</NetInvestmentIncome>
+      </AnalysisOfRevenueAndExpenses>
+      <BalanceSheets>
+        <CashBOY>11427</CashBOY>
+        <CashEOY>3776</CashEOY>
+        <CashEOYFMV>3776</CashEOYFMV>
+        <InvestmentsCorpStockBOY>554878</InvestmentsCorpStockBOY>
+        <InvestmentsCorpStockEOY referenceDocumentId="RetDoc2018900001">346652</InvestmentsCorpStockEOY>
+        <InvestmentsCorpStockEOYFMV>432256</InvestmentsCorpStockEOYFMV>
+        <TotalAssetsBOY>566305</TotalAssetsBOY>
+        <TotalAssetsEOY>350428</TotalAssetsEOY>
+        <TotalAssetsEOYFMV>436032</TotalAssetsEOYFMV>
+        <TotalLiabilitiesBOY>0</TotalLiabilitiesBOY>
+        <TotalLiabilitiesEOY>0</TotalLiabilitiesEOY>
+        <OrgThatDoNotFollowSFAS117>X</OrgThatDoNotFollowSFAS117>
+        <CapitalStockBOY>0</CapitalStockBOY>
+        <CapitalStockEOY>0</CapitalStockEOY>
+        <PaidInOrCapitalSurplusBOY>0</PaidInOrCapitalSurplusBOY>
+        <PaidInOrCapitalSurplusEOY>0</PaidInOrCapitalSurplusEOY>
+        <RetainedEarningsBOY>566305</RetainedEarningsBOY>
+        <RetainedEarningsEOY>350428</RetainedEarningsEOY>
+        <TotalNetAssetsBOY>566305</TotalNetAssetsBOY>
+        <TotalNetAssetsEOY>350428</TotalNetAssetsEOY>
+        <TotalLiabilitiesNetAssetsBOY>566305</TotalLiabilitiesNetAssetsBOY>
+        <TotalLiabilitiesNetAssetsEOY>350428</TotalLiabilitiesNetAssetsEOY>
+      </BalanceSheets>
+      <ChangesInNetAssetsFundBalances>
+        <TotalNetAssetsFundBalancesBOY>566305</TotalNetAssetsFundBalancesBOY>
+        <ExcessOfRevenueOverExpenses>-280012</ExcessOfRevenueOverExpenses>
+        <OtherIncreases referenceDocumentId="RetDoc2049700001">64135</OtherIncreases>
+        <Subtotal>350428</Subtotal>
+        <OtherDecreases>0</OtherDecreases>
+        <TotalNetAssetsFundBalancesEOY>350428</TotalNetAssetsFundBalancesEOY>
+      </ChangesInNetAssetsFundBalances>
+      <CapitalGainsAndLosses>
+        <CapitalGainsAndLossesInfo>
+          <DescriptionOfAsset>MORGAN STANLEY - DONATED L/T</DescriptionOfAsset>
+          <GrossSalesPrice>84596</GrossSalesPrice>
+          <CostOrOtherBasis>113</CostOrOtherBasis>
+          <GainOrLoss>84483</GainOrLoss>
+          <GainsMinusExcessOrLosses>84483</GainsMinusExcessOrLosses>
+        </CapitalGainsAndLossesInfo>
+        <CapitalGainsAndLossesInfo>
+          <DescriptionOfAsset>MORGAN STANLEY - L/T</DescriptionOfAsset>
+          <HowAcquired>P</HowAcquired>
+          <GrossSalesPrice>327730</GrossSalesPrice>
+          <CostOrOtherBasis>208113</CostOrOtherBasis>
+          <GainOrLoss>119617</GainOrLoss>
+          <GainsMinusExcessOrLosses>119617</GainsMinusExcessOrLosses>
+        </CapitalGainsAndLossesInfo>
+        <CapitalGainNetIncome>204100</CapitalGainNetIncome>
+      </CapitalGainsAndLosses>
+      <QlfyUndSect4940eForReducedTax>
+        <LiableFor4942Tax>0</LiableFor4942Tax>
+        <QualifyingDistributionsYear1>209536</QualifyingDistributionsYear1>
+        <NoncharitableAssetsYear1>770144</NoncharitableAssetsYear1>
+        <DistributionRatioYear1>0.272074</DistributionRatioYear1>
+        <QualifyingDistributionsYear2>38400</QualifyingDistributionsYear2>
+        <NoncharitableAssetsYear2>847635</NoncharitableAssetsYear2>
+        <DistributionRatioYear2>0.045303</DistributionRatioYear2>
+        <QualifyingDistributionsYear3>5000</QualifyingDistributionsYear3>
+        <NoncharitableAssetsYear3>788134</NoncharitableAssetsYear3>
+        <DistributionRatioYear3>0.006344</DistributionRatioYear3>
+        <QualifyingDistributionsYear4>25200</QualifyingDistributionsYear4>
+        <NoncharitableAssetsYear4>757031</NoncharitableAssetsYear4>
+        <DistributionRatioYear4>0.033288</DistributionRatioYear4>
+        <QualifyingDistributionsYear5>84778</QualifyingDistributionsYear5>
+        <NoncharitableAssetsYear5>876912</NoncharitableAssetsYear5>
+        <DistributionRatioYear5>0.096678</DistributionRatioYear5>
+        <TotalDistributionRatio>0.453687</TotalDistributionRatio>
+        <AverageDistributionRatio>0.090737</AverageDistributionRatio>
+        <NetNoncharitableAssets>567405</NetNoncharitableAssets>
+        <AdjustedNoncharitableAssets>51485</AdjustedNoncharitableAssets>
+        <OnePercentNetInvestmentIncome>2235</OnePercentNetInvestmentIncome>
+        <AdjNonchrtblAssetsAndOnePct>53720</AdjNonchrtblAssetsAndOnePct>
+        <QualifyingDistributions>435200</QualifyingDistributions>
+      </QlfyUndSect4940eForReducedTax>
+      <ExciseTaxBasedOnInvestmentIncm>
+        <DomesticOrgMeetingSect4940e>X</DomesticOrgMeetingSect4940e>
+        <InvestmentIncomeExciseTax>2235</InvestmentIncomeExciseTax>
+        <TaxUnderSection511>0</TaxUnderSection511>
+        <Subtotal>2235</Subtotal>
+        <SubtitleATax>0</SubtitleATax>
+        <TaxBasedOnInvestmentIncome>2235</TaxBasedOnInvestmentIncome>
+        <EstTaxPaymentsAndOverpayment>680</EstTaxPaymentsAndOverpayment>
+        <TotalCreditsAndPayments>680</TotalCreditsAndPayments>
+        <TaxDue>1555</TaxDue>
+      </ExciseTaxBasedOnInvestmentIncm>
+      <StatementsRegardingActivities>
+        <LegislativePoliticalActivities>0</LegislativePoliticalActivities>
+        <MoreThan100Spent>0</MoreThan100Spent>
+        <Form1120POLFiled>0</Form1120POLFiled>
+        <Sect4955TaxOnOrganization>0</Sect4955TaxOnOrganization>
+        <Sect4955TaxOnManagers>0</Sect4955TaxOnManagers>
+        <ReimbursementOfTax>0</ReimbursementOfTax>
+        <ActivitiesNotPrevReported>0</ActivitiesNotPrevReported>
+        <ChangesToArticlesOrBylaws>0</ChangesToArticlesOrBylaws>
+        <UnrelatedBusIncomeOver1000>0</UnrelatedBusIncomeOver1000>
+        <TerminationEtc>0</TerminationEtc>
+        <RequirementsOfSect508e>1</RequirementsOfSect508e>
+        <AtLeast5000InAssets>1</AtLeast5000InAssets>
+        <StatesFiledWith>OH</StatesFiledWith>
+        <Form990PFFiledWithAG>1</Form990PFFiledWithAG>
+        <PrivateOperatingFoundation>0</PrivateOperatingFoundation>
+        <NewSubstantialContributors>0</NewSubstantialContributors>
+        <InterestInControlledEntity>0</InterestInControlledEntity>
+        <ApplicableInsuranceContract>0</ApplicableInsuranceContract>
+        <ComplyWithPublicInspectionRqr>1</ComplyWithPublicInspectionRqr>
+        <WebsiteAddress>N/A</WebsiteAddress>
+        <BooksInCareOfPersonName>SANDRA GROSS</BooksInCareOfPersonName>
+        <BooksInCareOfPhoneNumber>5137856060</BooksInCareOfPhoneNumber>
+        <BooksInCareOfUSAddress>
+          <AddressLine1>4985 WALNUT WOODS LANE</AddressLine1>
+          <City>CINCINNATI</City>
+          <State>OH</State>
+          <ZIPCode>45243</ZIPCode>
+        </BooksInCareOfUSAddress>
+        <ForeignBank>0</ForeignBank>
+      </StatementsRegardingActivities>
+      <StatementsRegardingActy4720>
+        <SaleOrExchangeWithDsqflyPerson>0</SaleOrExchangeWithDsqflyPerson>
+        <BorrowOrLendWithDsqflyPerson>0</BorrowOrLendWithDsqflyPerson>
+        <FurnishedGoodsWithDsqflyPerson>0</FurnishedGoodsWithDsqflyPerson>
+        <PayCompensationToDsqflyPerson>0</PayCompensationToDsqflyPerson>
+        <TransferAssetsToDsqflyPerson>0</TransferAssetsToDsqflyPerson>
+        <PaymentToGovernmentOffical>0</PaymentToGovernmentOffical>
+        <UncorrectedPriorActs>0</UncorrectedPriorActs>
+        <UndistributedIncomePriorYears>0</UndistributedIncomePriorYears>
+        <BusinessHoldings>0</BusinessHoldings>
+        <JeopardyInvestments>0</JeopardyInvestments>
+        <UncorrectedJeopardyInvestments>0</UncorrectedJeopardyInvestments>
+        <InfluenceLegislation>0</InfluenceLegislation>
+        <InfluenceElection>0</InfluenceElection>
+        <GrantsToIndividuals>0</GrantsToIndividuals>
+        <GrantsToOrganizations>0</GrantsToOrganizations>
+        <NoncharitablePurpose>0</NoncharitablePurpose>
+        <RcvFundsToPayPrsnlBnftContract>0</RcvFundsToPayPrsnlBnftContract>
+        <PayPremiumsPrsnlBnftContract>0</PayPremiumsPrsnlBnftContract>
+        <ProhibitedTaxShelterTransactn>0</ProhibitedTaxShelterTransactn>
+      </StatementsRegardingActy4720>
+      <OfcrDirTrusteesKeyEmployeeInfo>
+        <OfcrDirTrusteesOrKeyEmployee>
+          <PersonName>SANDRA GROSS</PersonName>
+          <USAddress>
+            <AddressLine1>4985 WALNUT WOODS LANE</AddressLine1>
+            <City>CINCINNATI</City>
+            <State>OH</State>
+            <ZIPCode>452434063</ZIPCode>
+          </USAddress>
+          <Title>PRESIDENT</Title>
+          <AvgHoursPerWkDevotedToPosition>0.00</AvgHoursPerWkDevotedToPosition>
+          <Compensation>0</Compensation>
+          <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+          <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+        </OfcrDirTrusteesOrKeyEmployee>
+        <OfcrDirTrusteesOrKeyEmployee>
+          <PersonName>JOHN HUTTON</PersonName>
+          <USAddress>
+            <AddressLine1>4985 WALNUT WOODS LANE</AddressLine1>
+            <City>CINCINNATI</City>
+            <State>OH</State>
+            <ZIPCode>452434063</ZIPCode>
+          </USAddress>
+          <Title>VICE PRESIDENT</Title>
+          <AvgHoursPerWkDevotedToPosition>0.00</AvgHoursPerWkDevotedToPosition>
+          <Compensation>0</Compensation>
+          <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+          <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+        </OfcrDirTrusteesOrKeyEmployee>
+        <OfcrDirTrusteesOrKeyEmployee>
+          <PersonName>ANTHONY SCHWEIER</PersonName>
+          <USAddress>
+            <AddressLine1>1 E 4TH STREET STE 1200</AddressLine1>
+            <City>CINCINNATI</City>
+            <State>OH</State>
+            <ZIPCode>45202</ZIPCode>
+          </USAddress>
+          <Title>TREASURER</Title>
+          <AvgHoursPerWkDevotedToPosition>0.00</AvgHoursPerWkDevotedToPosition>
+          <Compensation>0</Compensation>
+          <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+          <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+        </OfcrDirTrusteesOrKeyEmployee>
+        <OfcrDirTrusteesOrKeyEmployee>
+          <PersonName>MICHAEL SCHWARTZ</PersonName>
+          <USAddress>
+            <AddressLine1>221 E 4TH STREET STE 2000 - ATRIUM</AddressLine1>
+            <AddressLine2>TWO</AddressLine2>
+            <City>CINCINNATI</City>
+            <State>OH</State>
+            <ZIPCode>45202</ZIPCode>
+          </USAddress>
+          <Title>SECRETARY</Title>
+          <AvgHoursPerWkDevotedToPosition>0.00</AvgHoursPerWkDevotedToPosition>
+          <Compensation>0</Compensation>
+          <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+          <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+        </OfcrDirTrusteesOrKeyEmployee>
+        <CompOfHighestPaidEmplNONE>NONE</CompOfHighestPaidEmplNONE>
+        <TotNumberOfOthEmplPaidOver50k>0</TotNumberOfOthEmplPaidOver50k>
+        <CompOfHghstPaidCntrctNONE>NONE</CompOfHghstPaidCntrctNONE>
+        <TotNumberOfCntrctPaidOver50k>0</TotNumberOfCntrctPaidOver50k>
+      </OfcrDirTrusteesKeyEmployeeInfo>
+      <SumOfProgramRelatedInvestments>
+        <Total>0</Total>
+      </SumOfProgramRelatedInvestments>
+      <MinimumInvestmentReturn>
+        <AvgMonthlyFMVOfSecurities>558460</AvgMonthlyFMVOfSecurities>
+        <AvgMonthlyCashBalances>17586</AvgMonthlyCashBalances>
+        <FMVAllOtherNoncharitableAssets>0</FMVAllOtherNoncharitableAssets>
+        <TotalFMVOfUnusedAssets>576046</TotalFMVOfUnusedAssets>
+        <ReductionClaimed>0</ReductionClaimed>
+        <AcquisitionIndebtedness>0</AcquisitionIndebtedness>
+        <AdjTotalFMVOfUnusedAssets>576046</AdjTotalFMVOfUnusedAssets>
+        <CashDeemedCharitable>8641</CashDeemedCharitable>
+        <NetNoncharitableAssets>567405</NetNoncharitableAssets>
+        <MinimumInvestmentReturn>28370</MinimumInvestmentReturn>
+      </MinimumInvestmentReturn>
+      <DistributableAmount>
+        <MinimumInvestmentReturn>28370</MinimumInvestmentReturn>
+        <TaxBasedOnInvestmentIncome>2235</TaxBasedOnInvestmentIncome>
+        <TotalTax>2235</TotalTax>
+        <DistributableAmountBeforeAdj>26135</DistributableAmountBeforeAdj>
+        <RecoveriesQlfyDistributions>0</RecoveriesQlfyDistributions>
+        <DistributableAmountBeforeDed>26135</DistributableAmountBeforeDed>
+        <DeductionFrDistributableAmount>0</DeductionFrDistributableAmount>
+        <DistributableAmountAsAdjusted>26135</DistributableAmountAsAdjusted>
+      </DistributableAmount>
+      <QualifyingDistributions>
+        <ExpensesAndContributions>435200</ExpensesAndContributions>
+        <ProgramRelatedInvestmentsTotal>0</ProgramRelatedInvestmentsTotal>
+        <QualifyingDistributions>435200</QualifyingDistributions>
+        <OnePctSect4940eOrgNetInvstIncm>2235</OnePctSect4940eOrgNetInvstIncm>
+        <AdjQualifyingDistributions>432965</AdjQualifyingDistributions>
+      </QualifyingDistributions>
+      <UndistributedIncome>
+        <DistributableAmountAsAdjusted>26135</DistributableAmountAsAdjusted>
+        <UndistributedIncomePriorYear>0</UndistributedIncomePriorYear>
+        <TotalForPriorYears>0</TotalForPriorYears>
+        <ExcessDistriCarryoverYear5>71366</ExcessDistriCarryoverYear5>
+        <ExcessDistriCarryoverYear1>172357</ExcessDistriCarryoverYear1>
+        <TotalExcessDistriCarryover>243723</TotalExcessDistriCarryover>
+        <QualifyingDistributions>435200</QualifyingDistributions>
+        <AppliedToYear1>0</AppliedToYear1>
+        <AppliedToPriorYears>0</AppliedToPriorYears>
+        <TreatedAsDistriFromCorpus>0</TreatedAsDistriFromCorpus>
+        <AppliedToCurrentYear>26135</AppliedToCurrentYear>
+        <RemainingDistriFromCorpus>409065</RemainingDistriFromCorpus>
+        <ExcessDistriCyovAppCYCorpus>0</ExcessDistriCyovAppCYCorpus>
+        <ExcessDistriCyovAppliedCY>0</ExcessDistriCyovAppliedCY>
+        <TotalCorpus>652788</TotalCorpus>
+        <PriorYearUndistributedIncome>0</PriorYearUndistributedIncome>
+        <PriorYearDeficiencyOrTax>0</PriorYearDeficiencyOrTax>
+        <TaxableAmount1>0</TaxableAmount1>
+        <TaxableAmount2>0</TaxableAmount2>
+        <UndistributedIncomeCY>0</UndistributedIncomeCY>
+        <DistriFromCorpus170b1EOr4942g3>0</DistriFromCorpus170b1EOr4942g3>
+        <ExcessDistriCyovFromYear5>71366</ExcessDistriCyovFromYear5>
+        <ExcessDistriCyovToNextYear>581422</ExcessDistriCyovToNextYear>
+        <ExcessFromYear1>172357</ExcessFromYear1>
+        <ExcessFromCurrentYear>409065</ExcessFromCurrentYear>
+      </UndistributedIncome>
+      <SupplementaryInformation>
+        <AppicationSubmissionInfo>
+          <RecipientName>SANDRA GROSS</RecipientName>
+          <RecipientUSAddress>
+            <AddressLine1>4985 WALNUT WOODS LANE</AddressLine1>
+            <City>CINCINNATI</City>
+            <State>OH</State>
+            <ZIPCode>45243</ZIPCode>
+          </RecipientUSAddress>
+          <RecipientPhoneNumber>5132413111</RecipientPhoneNumber>
+          <FormAndInfoAndMaterials>THE TRUST ACCEPTS WRITTEN APPLICATIONS FROM ORGANIZATIONS EXEMPT FROM TAX UNDER I.R.C. 509(A)(1), (2) OR (3). APPLICATIONS RECEIVED FROM OTHER ORGANIZATIONS OR FROM ANY INDIVIDUAL(S) WILL NOT BE CONSIDERED. THE APPLICATION MUST BE ACCOMPANIED BY A COPY OF THE EXEMPTED ORGANIZATION'S INTERNAL REVENUE SERVICE DETERMINATION LETTER REGARDING ITS CLASSIFICATION.</FormAndInfoAndMaterials>
+          <SubmissionDeadlines>APPLICATIONS ACCEPTED AT ANY TIME.</SubmissionDeadlines>
+          <RestrictionsOnAwards>IN AWARDING GRANTS, THE TRUST GIVES PREFERENCES TO THE ORGANIZATIONS WITH ACTIVITIES IN THE GREATER CINCINNATI AREA. GRANTS ARE GENERALLY RESTRICTED TO THE FIELDS OF RELIGION, EDUCATION, MEDICAL AND COMMUNITY PROJECTS. HOWEVER, TO THE EXTENT FUNDS ARE AVAILABLE, GRANTS MAY BE MADE FOR OTHER PROJECTS.</RestrictionsOnAwards>
+        </AppicationSubmissionInfo>
+        <GrantOrContriPaidDuringYear>
+          <RecipientBusinessName>
+            <BusinessNameLine1>THE CINCINNATI ZOO</BusinessNameLine1>
+          </RecipientBusinessName>
+          <RecipientUSAddress>
+            <AddressLine1>3400 VINE STREET</AddressLine1>
+            <City>CINCINNATI</City>
+            <State>OH</State>
+            <ZIPCode>45220</ZIPCode>
+          </RecipientUSAddress>
+          <RecipientRelationship>NONE</RecipientRelationship>
+          <RecipientFoundationStatus>PUBLIC CHARITY</RecipientFoundationStatus>
+          <PurposeOfGrantOrContribution>UNRESTRICTED CONTRIBUTION</PurposeOfGrantOrContribution>
+          <Amount>50000</Amount>
+        </GrantOrContriPaidDuringYear>
+        <GrantOrContriPaidDuringYear>
+          <RecipientBusinessName>
+            <BusinessNameLine1>THE NEW SCHOOL MONTESSORI</BusinessNameLine1>
+          </RecipientBusinessName>
+          <RecipientUSAddress>
+            <AddressLine1>3 BURTON WOODS LANE</AddressLine1>
+            <City>CINCINNATI</City>
+            <State>OH</State>
+            <ZIPCode>45229</ZIPCode>
+          </RecipientUSAddress>
+          <RecipientRelationship>NONE</RecipientRelationship>
+          <RecipientFoundationStatus>PUBLIC CHARITY</RecipientFoundationStatus>
+          <PurposeOfGrantOrContribution>UNRESTRICTED CONTRIBUTION</PurposeOfGrantOrContribution>
+          <Amount>150000</Amount>
+        </GrantOrContriPaidDuringYear>
+        <GrantOrContriPaidDuringYear>
+          <RecipientBusinessName>
+            <BusinessNameLine1>SANIBEL-CAPTIVA CONSERVATION FOUNDATION</BusinessNameLine1>
+          </RecipientBusinessName>
+          <RecipientUSAddress>
+            <AddressLine1>3333 SANIBEL-CAPTIVA ROAD</AddressLine1>
+            <City>SANIBEL</City>
+            <State>FL</State>
+            <ZIPCode>33957</ZIPCode>
+          </RecipientUSAddress>
+          <RecipientRelationship>NONE</RecipientRelationship>
+          <RecipientFoundationStatus>PUBLIC CHARITY</RecipientFoundationStatus>
+          <PurposeOfGrantOrContribution>UNRESTRICTED CONTRIBUTION</PurposeOfGrantOrContribution>
+          <Amount>210000</Amount>
+        </GrantOrContriPaidDuringYear>
+        <GrantOrContriPaidDuringYear>
+          <RecipientBusinessName>
+            <BusinessNameLine1>BIG SKY FILM INSTITUTE</BusinessNameLine1>
+          </RecipientBusinessName>
+          <RecipientUSAddress>
+            <AddressLine1>PO BOX 8796</AddressLine1>
+            <City>MISSOULA</City>
+            <State>MT</State>
+            <ZIPCode>59807</ZIPCode>
+          </RecipientUSAddress>
+          <RecipientRelationship>NONE</RecipientRelationship>
+          <RecipientFoundationStatus>PUBLIC CHARITY</RecipientFoundationStatus>
+          <PurposeOfGrantOrContribution>UNRESTRICTED CONTRIBUTION</PurposeOfGrantOrContribution>
+          <Amount>5000</Amount>
+        </GrantOrContriPaidDuringYear>
+        <GrantOrContriPaidDuringYear>
+          <RecipientBusinessName>
+            <BusinessNameLine1>CINCINNATI COUNTRY DAY</BusinessNameLine1>
+          </RecipientBusinessName>
+          <RecipientUSAddress>
+            <AddressLine1>6905 GIVEN RD</AddressLine1>
+            <City>CINCINNATI</City>
+            <State>OH</State>
+            <ZIPCode>45243</ZIPCode>
+          </RecipientUSAddress>
+          <RecipientRelationship>NONE</RecipientRelationship>
+          <RecipientFoundationStatus>PUBLIC CHARITY</RecipientFoundationStatus>
+          <PurposeOfGrantOrContribution>UNRESTRICTED CONTRIBUTION</PurposeOfGrantOrContribution>
+          <Amount>20000</Amount>
+        </GrantOrContriPaidDuringYear>
+        <TotGrantOrContriPaidDuringYear>435000</TotGrantOrContriPaidDuringYear>
+        <TotGrantOrContriApprovedFuture>0</TotGrantOrContriApprovedFuture>
+      </SupplementaryInformation>
+      <AnalysisIncomeProducingActy>
+        <DividendsAndIntFromSecPartVII>
+          <ExclusionCode>14</ExclusionCode>
+          <ExclusionAmount>19141</ExclusionAmount>
+        </DividendsAndIntFromSecPartVII>
+        <OtherInvestmentIncomePartVII>
+          <ExclusionCode>14</ExclusionCode>
+          <ExclusionAmount>280</ExclusionAmount>
+        </OtherInvestmentIncomePartVII>
+        <GainSalesAssetsOthThanInvntry>
+          <ExclusionCode>18</ExclusionCode>
+          <ExclusionAmount>139963</ExclusionAmount>
+        </GainSalesAssetsOthThanInvntry>
+        <SubtotalsPartXVIA>
+          <UnrelatedBusinessIncomeAmount>0</UnrelatedBusinessIncomeAmount>
+          <ExclusionAmount>159384</ExclusionAmount>
+          <RelatedOrExemptFunctionIncome>0</RelatedOrExemptFunctionIncome>
+        </SubtotalsPartXVIA>
+        <TotalPartXVIA>159384</TotalPartXVIA>
+      </AnalysisIncomeProducingActy>
+      <TrnsfrTrRlnWithNoncharitableEO>
+        <TrnsfrOfCashToNoncharitableEO>0</TrnsfrOfCashToNoncharitableEO>
+        <TrnsfrOthAssetsNoncharitableEO>0</TrnsfrOthAssetsNoncharitableEO>
+        <SalesOrExchangesOfAssets>0</SalesOrExchangesOfAssets>
+        <PurchaseAssetsNoncharitableEO>0</PurchaseAssetsNoncharitableEO>
+        <RentalOfFacilitiesEtc>0</RentalOfFacilitiesEtc>
+        <ReimbursementArrangements>0</ReimbursementArrangements>
+        <LoansOrLoanGuarantees>0</LoansOrLoanGuarantees>
+        <PerformanceOfServicesEtc>0</PerformanceOfServicesEtc>
+        <SharingOfFacilitiesEtc>0</SharingOfFacilitiesEtc>
+        <RelationshipsNoncharitableEOs>0</RelationshipsNoncharitableEOs>
+      </TrnsfrTrRlnWithNoncharitableEO>
+    </IRS990PF>
+    <AccountingFeesSchedule documentId="RetDoc2002200001">
+      <AccountingFees>
+        <Category>ACCOUNTING FEES</Category>
+        <Amount>2600</Amount>
+        <NetInvestmentIncome>0</NetInvestmentIncome>
+        <DisbursementsCharitablePrps>0</DisbursementsCharitablePrps>
+      </AccountingFees>
+    </AccountingFeesSchedule>
+    <InvestmentsCorpStockSchedule documentId="RetDoc2018900001">
+      <InvestmentsCorpStock>
+        <NameOfStock>CORPORATE STOCKS</NameOfStock>
+        <EOYBookValue>346652</EOYBookValue>
+        <EOYFMV>432256</EOYFMV>
+      </InvestmentsCorpStock>
+    </InvestmentsCorpStockSchedule>
+    <LegalFeesSchedule documentId="RetDoc2002100001">
+      <LegalFees>
+        <Category>LEGAL FEES</Category>
+        <Amount>879</Amount>
+        <NetInvestmentIncome>0</NetInvestmentIncome>
+        <DisbursementsCharitablePrps>0</DisbursementsCharitablePrps>
+      </LegalFees>
+    </LegalFeesSchedule>
+    <OtherIncomeSchedule2 documentId="RetDoc2001500001">
+      <OtherIncome>
+        <Description>MISCELLANEOUS INCOME</Description>
+        <RevenueAndExpensesPerBooks>280</RevenueAndExpensesPerBooks>
+        <NetInvestmentIncome>280</NetInvestmentIncome>
+        <AdjustedNetIncome>280</AdjustedNetIncome>
+      </OtherIncome>
+    </OtherIncomeSchedule2>
+    <OtherIncreasesSchedule documentId="RetDoc2049700001">
+      <OtherIncreases>
+        <Description>ADJUSTMENT FOR APPRECIATION OF STOCK GIFTED</Description>
+        <Amount>64135</Amount>
+      </OtherIncreases>
+    </OtherIncreasesSchedule>
+    <TaxesSchedule documentId="RetDoc2002500001">
+      <Taxes>
+        <Category>OH TAX</Category>
+        <Amount>200</Amount>
+        <NetInvestmentIncome>0</NetInvestmentIncome>
+        <DisbursementsCharitablePrps>200</DisbursementsCharitablePrps>
+      </Taxes>
+      <Taxes>
+        <Category>FEDERAL TAX</Category>
+        <Amount>717</Amount>
+        <NetInvestmentIncome>0</NetInvestmentIncome>
+        <DisbursementsCharitablePrps>0</DisbursementsCharitablePrps>
+      </Taxes>
+    </TaxesSchedule>
+  </ReturnData>
+</Return>

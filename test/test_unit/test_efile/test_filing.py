@@ -3,7 +3,7 @@ from typing import Tuple
 
 import pytest
 
-from composer.efile.filing import Filing
+from composer.efile.structures.filing import Filing
 
 @pytest.fixture
 def reference(date_downloaded) -> Filing:

@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" returnVersion="2012v2.0" xsi:schemaLocation="http://www.irs.gov/efile">
+  <ReturnHeader binaryAttachmentCount="0">
+    <Timestamp>2013-05-14T09:37:04-07:00</Timestamp>
+    <TaxPeriodEndDate>2012-12-31</TaxPeriodEndDate>
+    <PreparerFirm>
+      <PreparerFirmBusinessName>
+        <BusinessNameLine1>Thomas J Davey &amp; Associates Ltd</BusinessNameLine1>
+      </PreparerFirmBusinessName>
+      <PreparerFirmUSAddress>
+        <AddressLine1>7600 S County Line Rd St 6</AddressLine1>
+        <City>Burr Ridge</City>
+        <State>IL</State>
+        <ZIPCode>60527</ZIPCode>
+      </PreparerFirmUSAddress>
+    </PreparerFirm>
+    <ReturnType>990</ReturnType>
+    <TaxPeriodBeginDate>2012-01-01</TaxPeriodBeginDate>
+    <Filer>
+      <EIN>364201074</EIN>
+      <Name>
+        <BusinessNameLine1>CENTURY WALK CORPORATION</BusinessNameLine1>
+        <BusinessNameLine2>CO W BRAND BOBOSKY</BusinessNameLine2>
+      </Name>
+      <NameControl>CENT</NameControl>
+      <Phone>6303555553</Phone>
+      <USAddress>
+        <AddressLine1>34 W CHICAGO AVE</AddressLine1>
+        <City>NAPERVILLE</City>
+        <State>IL</State>
+        <ZIPCode>60540</ZIPCode>
+      </USAddress>
+    </Filer>
+    <Officer>
+      <Name>DON WEBER</Name>
+      <Title>Director</Title>
+      <DateSigned>2013-05-09</DateSigned>
+      <AuthorizeThirdParty>true</AuthorizeThirdParty>
+    </Officer>
+    <Preparer>
+      <Name>Thomas J Davey CPA</Name>
+      <PTIN>P00152978</PTIN>
+      <Phone>6306548350</Phone>
+    </Preparer>
+    <TaxYear>2012</TaxYear>
+    <BuildTS>2016-02-24 21:20:13Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCount="5">
+    <IRS990 documentId="IRS990" referenceDocumentId="IRS990ScheduleO" softwareId="12000229" softwareVersion="2012v2.0">
+      <GrossReceipts>197621</GrossReceipts>
+      <GroupReturnForAffiliates>false</GroupReturnForAffiliates>
+      <AllAffiliatesIncluded>false</AllAffiliatesIncluded>
+      <Organization501c3>X</Organization501c3>
+      <WebSite>www.centurywalk.org</WebSite>
+      <TypeOfOrganizationCorporation>X</TypeOfOrganizationCorporation>
+      <YearFormation>1996</YearFormation>
+      <StateLegalDomicile>IL</StateLegalDomicile>
+      <ActivityOrMissionDescription>CENTURY WALK IS AN ONGOING PUBLIC ARTS PROGRAM AVAILABLE TO THE PUBLIC. THE GOAL OF CENTURY WALK IS TO CREATE CULTURALLY SIGNIFICANT AND DIVERSE PUBLIC ART THROUGHOUT NAPERVILLE IN THE TWENTY-FIRST CENTURY. CENTURY WALK CORPORATION EXISTS SOLELY FOR THESE GOALS.</ActivityOrMissionDescription>
+      <NbrVotingMembersGoverningBody>12</NbrVotingMembersGoverningBody>
+      <NbrIndependentVotingMembers>12</NbrIndependentVotingMembers>
+      <TotalNbrEmployees>0</TotalNbrEmployees>
+      <TotalNbrVolunteers>40</TotalNbrVolunteers>
+      <TotalGrossUBI>0</TotalGrossUBI>
+      <ContributionsGrantsPriorYear>254415</ContributionsGrantsPriorYear>
+      <ContributionsGrantsCurrentYear>196550</ContributionsGrantsCurrentYear>
+      <ProgramServiceRevenueCY>0</ProgramServiceRevenueCY>
+      <InvestmentIncomeCurrentYear>0</InvestmentIncomeCurrentYear>
+      <OtherRevenuePriorYear>-915</OtherRevenuePriorYear>
+      <OtherRevenueCurrentYear>-398</OtherRevenueCurrentYear>
+      <TotalRevenuePriorYear>253500</TotalRevenuePriorYear>
+      <TotalRevenueCurrentYear>196152</TotalRevenueCurrentYear>
+      <GrantsAndSimilarAmntsCY>0</GrantsAndSimilarAmntsCY>
+      <BenefitsPaidToMembersCY>0</BenefitsPaidToMembersCY>
+      <SalariesEtcCurrentYear>20000</SalariesEtcCurrentYear>
+      <TotalProfFundrsngExpCY>0</TotalProfFundrsngExpCY>
+      <TotalFundrsngExpCurrentYear>0</TotalFundrsngExpCurrentYear>
+      <OtherExpensePriorYear>24422</OtherExpensePriorYear>
+      <OtherExpensesCurrentYear>40441</OtherExpensesCurrentYear>
+      <TotalExpensesPriorYear>24422</TotalExpensesPriorYear>
+      <TotalExpensesCurrentYear>60441</TotalExpensesCurrentYear>
+      <RevenuesLessExpensesPriorYear>229078</RevenuesLessExpensesPriorYear>
+      <RevenuesLessExpensesCY>135711</RevenuesLessExpensesCY>
+      <TotalAssetsBOY>1480461</TotalAssetsBOY>
+      <TotalAssetsEOY>1616172</TotalAssetsEOY>
+      <TotalLiabilitiesEOY>0</TotalLiabilitiesEOY>
+      <NetAssetsOrFundBalancesBOY>1480461</NetAssetsOrFundBalancesBOY>
+      <NetAssetsOrFundBalancesEOY>1616172</NetAssetsOrFundBalancesEOY>
+      <MissionDescription>CENTURY WALK IS AN ONGOING PUBLIC ARTS PROGRAM AVAILABLE TO THE PUBLIC. THE GOAL OF CENTURY WALK IS TO CREATE CULTURALLY SIGNIFICANT AND DIVERSE PUBLIC ART THROUGHOUT NAPERVILLE IN THE TWENTY-FIRST CENTURY. CENTURY WALK CORPORATION EXISTS SOLELY FOR THESE GOALS.</MissionDescription>
+      <SignificantNewProgramServices>false</SignificantNewProgramServices>
+      <SignificantChange>false</SignificantChange>
+      <Expense>11134</Expense>
+      <Description>ADVERTISING COSTS FOR ARTWORK DEDICATIONS</Description>
+      <Activity2>
+        <Expense>200</Expense>
+        <Description>PAYMENTS TO SERVICE PROVIDERS WHO MAINTAIN THE ARTWORK FOR THE BENEFIT OF THE PUBLIC AT LARGE.</Description>
+      </Activity2>
+      <TotalProgramServiceExpense>11334</TotalProgramServiceExpense>
+      <DescribedIn501C3 referenceDocumentId="IRS990ScheduleA">true</DescribedIn501C3>
+      <ScheduleBRequired>false</ScheduleBRequired>
+      <PoliticalActivities>false</PoliticalActivities>
+      <LobbyingActivities>false</LobbyingActivities>
+      <SubjectToProxyTax>false</SubjectToProxyTax>
+      <DonorAdvisedFunds referenceDocumentId="IRS990ScheduleD">false</DonorAdvisedFunds>
+      <ConservationEasements referenceDocumentId="IRS990ScheduleD">false</ConservationEasements>
+      <CollectionsOfArt referenceDocumentId="IRS990ScheduleD">true</CollectionsOfArt>
+      <CreditCounseling referenceDocumentId="IRS990ScheduleD">false</CreditCounseling>
+      <TermOrPermanentEndowments referenceDocumentId="IRS990ScheduleD">false</TermOrPermanentEndowments>
+      <ReportLandBldgEquip referenceDocumentId="IRS990ScheduleD">false</ReportLandBldgEquip>
+      <ReportInvestOthSecurities referenceDocumentId="IRS990ScheduleD">false</ReportInvestOthSecurities>
+      <ReportProgRelInvest referenceDocumentId="IRS990ScheduleD">false</ReportProgRelInvest>
+      <ReportOtherAssets referenceDocumentId="IRS990ScheduleD">true</ReportOtherAssets>
+      <ReportOtherLiabilities referenceDocumentId="IRS990ScheduleD">false</ReportOtherLiabilities>
+      <ReportFin48Footnote referenceDocumentId="IRS990ScheduleD">false</ReportFin48Footnote>
+      <IndependentAuditFinancialStmt referenceDocumentId="IRS990ScheduleD">false</IndependentAuditFinancialStmt>
+      <ConsolidatedAuditFinancialStmt referenceDocumentId="IRS990ScheduleD">false</ConsolidatedAuditFinancialStmt>
+      <School>false</School>
+      <ForeignOffice>false</ForeignOffice>
+      <ForeignActivities>false</ForeignActivities>
+      <MoreThan5000KToOrganizations>false</MoreThan5000KToOrganizations>
+      <MoreThan5000KToIndividuals>false</MoreThan5000KToIndividuals>
+      <ProfessionalFundraising>false</ProfessionalFundraising>
+      <FundraisingActivities>false</FundraisingActivities>
+      <Gaming>false</Gaming>
+      <Hospital>false</Hospital>
+      <GrantsToOrganizations>false</GrantsToOrganizations>
+      <GrantsToIndividuals>false</GrantsToIndividuals>
+      <ScheduleJRequired>false</ScheduleJRequired>
+      <TaxExemptBonds>false</TaxExemptBonds>
+      <InvestTaxExemptBonds>false</InvestTaxExemptBonds>
+      <EscrowAccount>false</EscrowAccount>
+      <OnBehalfOfIssuer>false</OnBehalfOfIssuer>
+      <ExcessBenefitTransaction referenceDocumentId="IRS990ScheduleL">false</ExcessBenefitTransaction>
+      <PriorExcessBenefitTransaction referenceDocumentId="IRS990ScheduleL">false</PriorExcessBenefitTransaction>
+      <LoanToOfficerOrDQP referenceDocumentId="IRS990ScheduleL">false</LoanToOfficerOrDQP>
+      <GrantToRelatedPerson referenceDocumentId="IRS990ScheduleL">false</GrantToRelatedPerson>
+      <BsnssRltnshpWithOrganization referenceDocumentId="IRS990ScheduleL">true</BsnssRltnshpWithOrganization>
+      <BsnssRltnshpThruFamilyMember referenceDocumentId="IRS990ScheduleL">false</BsnssRltnshpThruFamilyMember>
+      <OfficerEntityWithBsnssRltnshp referenceDocumentId="IRS990ScheduleL">true</OfficerEntityWithBsnssRltnshp>
+      <DeductibleNonCashContributions>false</DeductibleNonCashContributions>
+      <DeductibleContributionsOfArt>false</DeductibleContributionsOfArt>
+      <Terminated>false</Terminated>
+      <PartialLiquidation>false</PartialLiquidation>
+      <DisregardedEntity>false</DisregardedEntity>
+      <RelatedEntity>false</RelatedEntity>
+      <RelatedOrgControlledEntity>false</RelatedOrgControlledEntity>
+      <TransactionRelatedEntity>false</TransactionRelatedEntity>
+      <TransfersToExemptNonChrtblOrg>false</TransfersToExemptNonChrtblOrg>
+      <ActivitiesConductedPartnership>false</ActivitiesConductedPartnership>
+      <ScheduleORequired>true</ScheduleORequired>
+      <NumberFormsTransmittedWith1096>5</NumberFormsTransmittedWith1096>
+      <NumberW2GIncluded>0</NumberW2GIncluded>
+      <ComplianceWithBackupWitholding>true</ComplianceWithBackupWitholding>
+      <NumberOfEmployees>0</NumberOfEmployees>
+      <EmploymentTaxReturnsFiled>false</EmploymentTaxReturnsFiled>
+      <UnrelatedBusinessIncome>false</UnrelatedBusinessIncome>
+      <Form990-TFiled>false</Form990-TFiled>
+      <ForeignFinancialAccount>false</ForeignFinancialAccount>
+      <ProhibitedTaxShelterTrans>false</ProhibitedTaxShelterTrans>
+      <TaxablePartyNotification>false</TaxablePartyNotification>
+      <NonDeductibleContributions>false</NonDeductibleContributions>
+      <QuidProQuoContributions>false</QuidProQuoContributions>
+      <Form8282PropertyDisposedOf>false</Form8282PropertyDisposedOf>
+      <NumberOf8282Filed>0</NumberOf8282Filed>
+      <FundsToPayPremiums>false</FundsToPayPremiums>
+      <PremiumsPaid>false</PremiumsPaid>
+      <Form8899Filed>false</Form8899Filed>
+      <Form1098CFiled>false</Form1098CFiled>
+      <ExcessBusinessHoldings>false</ExcessBusinessHoldings>
+      <TaxableDistributions>false</TaxableDistributions>
+      <DistributionToDonor>false</DistributionToDonor>
+      <FiledLieu1041>false</FiledLieu1041>
+      <LicensedMoreThanOneState>false</LicensedMoreThanOneState>
+      <IndoorTanningServices>false</IndoorTanningServices>
+      <InfoInScheduleOPartVI>X</InfoInScheduleOPartVI>
+      <NbrVotingGoverningBodyMembers>12</NbrVotingGoverningBodyMembers>
+      <NumberIndependentVotingMembers>12</NumberIndependentVotingMembers>
+      <FamilyOrBusinessRelationship>false</FamilyOrBusinessRelationship>
+      <DelegationOfManagementDuties>false</DelegationOfManagementDuties>
+      <ChangesToOrganizingDocs>false</ChangesToOrganizingDocs>
+      <MaterialDiversionOrMisuse>false</MaterialDiversionOrMisuse>
+      <MembersOrStockholders>true</MembersOrStockholders>
+      <ElectionOfBoardMembers>true</ElectionOfBoardMembers>
+      <DecisionsSubjectToApproval>false</DecisionsSubjectToApproval>
+      <MinutesOfGoverningBody>true</MinutesOfGoverningBody>
+      <MinutesOfCommittees>true</MinutesOfCommittees>
+      <OfficerMailingAddress>false</OfficerMailingAddress>
+      <LocalChapters>false</LocalChapters>
+      <Form990ProvidedToGoverningBody>false</Form990ProvidedToGoverningBody>
+      <ConflictOfInterestPolicy>false</ConflictOfInterestPolicy>
+      <AnnualDisclosureCoveredPersons>false</AnnualDisclosureCoveredPersons>
+      <RegularMonitoringEnforcement>false</RegularMonitoringEnforcement>
+      <WhistleblowerPolicy>false</WhistleblowerPolicy>
+      <DocumentRetentionPolicy>false</DocumentRetentionPolicy>
+      <CompensationProcessCEO>false</CompensationProcessCEO>
+      <CompensationProcessOther>false</CompensationProcessOther>
+      <InvestmentInJointVenture>false</InvestmentInJointVenture>
+      <StatesWhereCopyOfReturnIsFiled>IL</StatesWhereCopyOfReturnIsFiled>
+      <UponRequest>X</UponRequest>
+      <TheBooksAreInCareOf>
+        <NamePerson>DON WEBER TREASURER</NamePerson>
+        <TelephoneNumber>6303939494</TelephoneNumber>
+        <AddressUS>
+          <AddressLine1>2105 CAMELLIA CT</AddressLine1>
+          <City>NAPERVILLE</City>
+          <State>IL</State>
+          <ZIPCode>60540</ZIPCode>
+        </AddressUS>
+      </TheBooksAreInCareOf>
+      <Form990PartVIISectionA>
+        <NamePerson>JOHN T HIGGINS</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>BETTYE WEHRLI</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>DON WEBER</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <Officer>X</Officer>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>ROY GRUNDY</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>WILL SMITH</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>PAT SCHMITT</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>PAT PHILLIPS</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>STEVE HYETT</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>SUE MC CARTHY</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>STEVE COATES</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>KATHY CHANNELL</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <ReportableCompFromOrganization>0</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <Form990PartVIISectionA>
+        <NamePerson>W BRAND BOBOSKY</NamePerson>
+        <Title>Director</Title>
+        <AverageHoursPerWeek>0.00</AverageHoursPerWeek>
+        <AverageHoursPerWeekRelated>0.00</AverageHoursPerWeekRelated>
+        <IndividualTrusteeOrDirector>X</IndividualTrusteeOrDirector>
+        <Officer>X</Officer>
+        <ReportableCompFromOrganization>20000</ReportableCompFromOrganization>
+        <ReportableCompFromRelatedOrgs>0</ReportableCompFromRelatedOrgs>
+        <OtherCompensation>0</OtherCompensation>
+      </Form990PartVIISectionA>
+      <TotalReportableCompFromOrg>20000</TotalReportableCompFromOrg>
+      <NumberIndividualsGT100K>0</NumberIndividualsGT100K>
+      <FormersListed>false</FormersListed>
+      <TotalCompGT150K>false</TotalCompGT150K>
+      <CompensationFromOtherSources>false</CompensationFromOtherSources>
+      <NumberOfContractorsGT100K>0</NumberOfContractorsGT100K>
+      <GovernmentGrants>112500</GovernmentGrants>
+      <AllOtherContributions>84050</AllOtherContributions>
+      <TotalContributions>196550</TotalContributions>
+      <TotalProgramServiceRevenue>0</TotalProgramServiceRevenue>
+      <InvestmentIncome>
+        <TotalRevenueColumn>0</TotalRevenueColumn>
+      </InvestmentIncome>
+      <IncomeFromInvestBondProceeds>
+        <TotalRevenueColumn>0</TotalRevenueColumn>
+      </IncomeFromInvestBondProceeds>
+      <RoyaltiesRevenue>
+        <TotalRevenueColumn>0</TotalRevenueColumn>
+      </RoyaltiesRevenue>
+      <NetRentalIncomeOrLoss>
+        <TotalRevenueColumn>0</TotalRevenueColumn>
+      </NetRentalIncomeOrLoss>
+      <NetGainOrLossInvestments>
+        <TotalRevenueColumn>0</TotalRevenueColumn>
+      </NetGainOrLossInvestments>
+      <NetIncomeFromFundraisingEvents>
+        <TotalRevenueColumn>0</TotalRevenueColumn>
+      </NetIncomeFromFundraisingEvents>
+      <NetIncomeFromGaming>
+        <TotalRevenueColumn>0</TotalRevenueColumn>
+      </NetIncomeFromGaming>
+      <GrossSalesOfInventory>1071</GrossSalesOfInventory>
+      <CostOfGoodsSold>1469</CostOfGoodsSold>
+      <NetIncomeOrLoss>
+        <TotalRevenueColumn>-398</TotalRevenueColumn>
+        <ExclusionAmount>-398</ExclusionAmount>
+      </NetIncomeOrLoss>
+      <TotalOtherRevenue>0</TotalOtherRevenue>
+      <TotalRevenue>
+        <TotalRevenueColumn>196152</TotalRevenueColumn>
+        <ExclusionAmount>-398</ExclusionAmount>
+      </TotalRevenue>
+      <GrantsToDomesticOrgs>
+        <Total>0</Total>
+      </GrantsToDomesticOrgs>
+      <GrantsToDomesticIndividuals>
+        <Total>0</Total>
+      </GrantsToDomesticIndividuals>
+      <ForeignGrants>
+        <Total>0</Total>
+      </ForeignGrants>
+      <BenefitsToMembers>
+        <Total>0</Total>
+      </BenefitsToMembers>
+      <CompCurrentOfficersDirectors>
+        <Total>20000</Total>
+        <ManagementAndGeneral>20000</ManagementAndGeneral>
+      </CompCurrentOfficersDirectors>
+      <CompDisqualPersons>
+        <Total>0</Total>
+      </CompDisqualPersons>
+      <OtherSalariesAndWages>
+        <Total>0</Total>
+      </OtherSalariesAndWages>
+      <PensionPlanContributions>
+        <Total>0</Total>
+      </PensionPlanContributions>
+      <OtherEmployeeBenefits>
+        <Total>0</Total>
+      </OtherEmployeeBenefits>
+      <PayrollTaxes>
+        <Total>0</Total>
+      </PayrollTaxes>
+      <FeesForServicesManagement>
+        <Total>0</Total>
+      </FeesForServicesManagement>
+      <FeesForServicesLegal>
+        <Total>200</Total>
+        <ManagementAndGeneral>200</ManagementAndGeneral>
+      </FeesForServicesLegal>
+      <FeesForServicesAccounting>
+        <Total>1450</Total>
+        <ManagementAndGeneral>1450</ManagementAndGeneral>
+      </FeesForServicesAccounting>
+      <FeesForServicesLobbying>
+        <Total>0</Total>
+      </FeesForServicesLobbying>
+      <FeesForServicesProfFundraising>
+        <Total>0</Total>
+      </FeesForServicesProfFundraising>
+      <FeesForServicesInvstMgmntFees>
+        <Total>0</Total>
+      </FeesForServicesInvstMgmntFees>
+      <FeesForServicesOther>
+        <Total>10</Total>
+        <ManagementAndGeneral>10</ManagementAndGeneral>
+      </FeesForServicesOther>
+      <Advertising>
+        <Total>11134</Total>
+        <ProgramServices>11134</ProgramServices>
+      </Advertising>
+      <OfficeExpenses>
+        <Total>85</Total>
+        <ManagementAndGeneral>85</ManagementAndGeneral>
+      </OfficeExpenses>
+      <InformationTechnology>
+        <Total>0</Total>
+      </InformationTechnology>
+      <Royalties>
+        <Total>0</Total>
+      </Royalties>
+      <Occupancy>
+        <Total>8000</Total>
+        <ManagementAndGeneral>8000</ManagementAndGeneral>
+      </Occupancy>
+      <Travel>
+        <Total>0</Total>
+      </Travel>
+      <TravelEntrtnmntPublicOfficials>
+        <Total>0</Total>
+      </TravelEntrtnmntPublicOfficials>
+      <ConferencesMeetings>
+        <Total>0</Total>
+      </ConferencesMeetings>
+      <Interest>
+        <Total>0</Total>
+      </Interest>
+      <PaymentsToAffiliates>
+        <Total>0</Total>
+      </PaymentsToAffiliates>
+      <DepreciationDepletion>
+        <Total>0</Total>
+      </DepreciationDepletion>
+      <Insurance>
+        <Total>0</Total>
+      </Insurance>
+      <OtherExpenses>
+        <Description>Postage and Shipping</Description>
+        <Total>629</Total>
+        <ManagementAndGeneral>629</ManagementAndGeneral>
+      </OtherExpenses>
+      <OtherExpenses>
+        <Description>Printing and Publications</Description>
+        <Total>1884</Total>
+        <ManagementAndGeneral>1884</ManagementAndGeneral>
+      </OtherExpenses>
+      <OtherExpenses>
+        <Description>WEB HOSTING</Description>
+        <Total>2340</Total>
+        <ManagementAndGeneral>2340</ManagementAndGeneral>
+      </OtherExpenses>
+      <OtherExpenses>
+        <Description>clerical services</Description>
+        <Total>13499</Total>
+        <ManagementAndGeneral>13499</ManagementAndGeneral>
+      </OtherExpenses>
+      <AllOtherExpenses>
+        <Total>1210</Total>
+        <ProgramServices>200</ProgramServices>
+        <ManagementAndGeneral>1010</ManagementAndGeneral>
+      </AllOtherExpenses>
+      <TotalFunctionalExpenses>
+        <Total>60441</Total>
+        <ProgramServices>11334</ProgramServices>
+        <ManagementAndGeneral>49107</ManagementAndGeneral>
+        <Fundraising>0</Fundraising>
+      </TotalFunctionalExpenses>
+      <CashNonInterestBearing>
+        <BOY>41612</BOY>
+        <EOY>13324</EOY>
+      </CashNonInterestBearing>
+      <SavingsAndTempCashInvestments>
+        <EOY>0</EOY>
+      </SavingsAndTempCashInvestments>
+      <PledgesAndGrantsReceivable>
+        <EOY>0</EOY>
+      </PledgesAndGrantsReceivable>
+      <AccountsReceivable>
+        <EOY>0</EOY>
+      </AccountsReceivable>
+      <ReceivablesFromOfficersEtc>
+        <EOY>0</EOY>
+      </ReceivablesFromOfficersEtc>
+      <ReceivablesFromDisqualPersons>
+        <EOY>0</EOY>
+      </ReceivablesFromDisqualPersons>
+      <OtherNotesLoansReceivableNet>
+        <EOY>0</EOY>
+      </OtherNotesLoansReceivableNet>
+      <InventoriesForSaleOrUse>
+        <BOY>48319</BOY>
+        <EOY>46850</EOY>
+      </InventoriesForSaleOrUse>
+      <PrepaidExpensesDeferredCharges>
+        <EOY>0</EOY>
+      </PrepaidExpensesDeferredCharges>
+      <LandBuildingsEquipmentBasisNet>
+        <EOY>0</EOY>
+      </LandBuildingsEquipmentBasisNet>
+      <InvestmentsPubTradedSecurities>
+        <EOY>0</EOY>
+      </InvestmentsPubTradedSecurities>
+      <InvestmentsOtherSecurities>
+        <EOY>0</EOY>
+      </InvestmentsOtherSecurities>
+      <InvestmentsProgramRelated>
+        <EOY>0</EOY>
+      </InvestmentsProgramRelated>
+      <IntangibleAssets>
+        <EOY>0</EOY>
+      </IntangibleAssets>
+      <OtherAssetsTotal>
+        <BOY>1390530</BOY>
+        <EOY>1555998</EOY>
+      </OtherAssetsTotal>
+      <TotalAssets>
+        <BOY>1480461</BOY>
+        <EOY>1616172</EOY>
+      </TotalAssets>
+      <TotalLiabilities>
+        <BOY>0</BOY>
+        <EOY>0</EOY>
+      </TotalLiabilities>
+      <FollowSFAS117>X</FollowSFAS117>
+      <UnrestrictedNetAssets>
+        <BOY>1480461</BOY>
+        <EOY>1616172</EOY>
+      </UnrestrictedNetAssets>
+      <TotalNetAssetsFundBalances>
+        <BOY>1480461</BOY>
+        <EOY>1616172</EOY>
+      </TotalNetAssetsFundBalances>
+      <TotalLiabNetAssetsFundBalances>
+        <BOY>1480461</BOY>
+        <EOY>1616172</EOY>
+      </TotalLiabNetAssetsFundBalances>
+      <ReconcilationRevenueExpenses>135711</ReconcilationRevenueExpenses>
+      <MethodOfAccountingCash>X</MethodOfAccountingCash>
+      <AccountantCompileOrReview>false</AccountantCompileOrReview>
+      <FSAudited>false</FSAudited>
+      <FederalGrantAuditRequired>false</FederalGrantAuditRequired>
+    </IRS990>
+    <IRS990ScheduleA documentId="IRS990ScheduleA" softwareId="12000229" softwareVersion="2012v2.0">
+      <PubliclySupportedOrg170b1Avi>X</PubliclySupportedOrg170b1Avi>
+      <GiftsGrantsContribReceived170>
+        <CurrentTaxYearMinus4Years>256975</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>232146</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>192829</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>230415</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>196300</CurrentTaxYear>
+        <Total>1108665</Total>
+      </GiftsGrantsContribReceived170>
+      <TaxRevLeviedForOrgBenefit170>
+        <Total>0</Total>
+      </TaxRevLeviedForOrgBenefit170>
+      <ValueSrvcFcltsFurnishedByGovt>
+        <Total>0</Total>
+      </ValueSrvcFcltsFurnishedByGovt>
+      <Total170>
+        <CurrentTaxYearMinus4Years>256975</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>232146</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>192829</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>230415</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>196300</CurrentTaxYear>
+        <Total>1108665</Total>
+      </Total170>
+      <AmountsSubstContributorsTotal>0</AmountsSubstContributorsTotal>
+      <PublicSupportTotal170>1108665</PublicSupportTotal170>
+      <GrossInvestmentIncome170>
+        <CurrentTaxYearMinus4Years>154</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>140</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>13</CurrentTaxYearMinus2Years>
+        <Total>307</Total>
+      </GrossInvestmentIncome170>
+      <NetUBI>
+        <Total>0</Total>
+      </NetUBI>
+      <OtherIncome170>
+        <Total>0</Total>
+      </OtherIncome170>
+      <TotalSupport>1108972</TotalSupport>
+      <PublicSupportPertcentage170>0.99970</PublicSupportPertcentage170>
+      <PublicSupportPertcentPriorYear>0.99880</PublicSupportPertcentPriorYear>
+      <ThirtyThreePercntTestsCY170>X</ThirtyThreePercntTestsCY170>
+    </IRS990ScheduleA>
+    <IRS990ScheduleD documentId="IRS990ScheduleD" softwareId="12000229" softwareVersion="2012v2.0">
+      <HeldWorksOfArtAmts>
+        <AssetsInPartX>1555998</AssetsInPartX>
+      </HeldWorksOfArtAmts>
+      <CollectUsedForPublicExhibition>X</CollectUsedForPublicExhibition>
+      <CollectUsedForPreservation>X</CollectUsedForPreservation>
+      <SolicitedAssetsForSale>false</SolicitedAssetsForSale>
+      <OtherAssets>
+        <Description>ART COLLECTION</Description>
+        <BookValue>1555998</BookValue>
+      </OtherAssets>
+      <TotalBookValueOtherAssets>1555998</TotalBookValueOtherAssets>
+      <Form990ScheduleDPartXIII>
+        <Identifier>Part III, Line 4</Identifier>
+        <ReturnReference>Part III, Line 4: Description of organization's collections and how it furthers its purpose.</ReturnReference>
+        <Explanation>The organization is dedicated to bringing public art to Naperville to add beauty to the town, build community and bridge generations by paying tribute to Naperville's 100 years of history through a diverse collection of murals, mosaics, reliefs, sculptures, and other public arts. The collection currently consists of pieces of public art on permanent outdoor display which represent the history of Naperville and expand the body of artwork throughout Naperville.</Explanation>
+      </Form990ScheduleDPartXIII>
+    </IRS990ScheduleD>
+    <IRS990ScheduleL documentId="IRS990ScheduleL" softwareId="12000229" softwareVersion="2012v2.0">
+      <Form990ScheduleLPartIV>
+        <NameOfInterestedPerson>
+          <NameBusiness>
+            <BusinessNameLine1>BRAND REALTY</BusinessNameLine1>
+          </NameBusiness>
+        </NameOfInterestedPerson>
+        <Relationship>OFFICER</Relationship>
+        <AmountOfTransaction>8000</AmountOfTransaction>
+        <DescriptionOfTransaction>PROPERTY RENTAL</DescriptionOfTransaction>
+        <SharingOfRevenues>false</SharingOfRevenues>
+      </Form990ScheduleLPartIV>
+      <Form990ScheduleLPartIV>
+        <NameOfInterestedPerson>
+          <NamePerson>W BRAND BOBOSKY</NamePerson>
+        </NameOfInterestedPerson>
+        <Relationship>OFFICER</Relationship>
+        <AmountOfTransaction>20000</AmountOfTransaction>
+        <DescriptionOfTransaction>MANAGEMENT FEE</DescriptionOfTransaction>
+        <SharingOfRevenues>false</SharingOfRevenues>
+      </Form990ScheduleLPartIV>
+    </IRS990ScheduleL>
+    <IRS990ScheduleO documentId="IRS990ScheduleO" softwareId="12000229" softwareVersion="2012v2.0">
+      <GeneralExplanation>
+        <Identifier>Form 990, Part VI, Line 19</Identifier>
+        <ReturnReference>Form 990, Part VI, Line 19: Other Organization Documents Publicly Available</ReturnReference>
+        <Explanation>THE GOVERNING DOCUMENTS, POLICIES AND FINANCIAL STATEMENTS ARE AVAILABLE UPON WRITTEN REQUEST.</Explanation>
+      </GeneralExplanation>
+      <GeneralExplanation>
+        <Identifier>Form 990, Part VI, Line 11b</Identifier>
+        <ReturnReference>Form 990, Part VI, Line 11b: Form 990 Review Process</ReturnReference>
+        <Explanation>THE ORGANIZATION'S TREASURER WILL REVIEW THE FORM 990 PRIOR TO FILING.</Explanation>
+      </GeneralExplanation>
+    </IRS990ScheduleO>
+  </ReturnData>
+</Return>

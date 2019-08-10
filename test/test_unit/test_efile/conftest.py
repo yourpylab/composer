@@ -1,6 +1,6 @@
 from collections.abc import Callable
-from composer.efile.filing import Filing
-from composer.efile.sqlite import init_sqlite_db
+from composer.efile.structures.filing import Filing
+from composer.efile.structures.sqlite import init_sqlite_db
 from typing import List, Dict
 import datetime
 

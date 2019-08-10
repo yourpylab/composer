@@ -11,7 +11,11 @@ setuptools.setup(
     install_requires=[
         'pytest',
         'click',
-        'pytz'
+        'pytz',
+        'boto3',
+        'mock',
+        'lxml',
+        'xmljson'
     ],
     classifiers=[
         'Programming Language :: Python :: 3.7',

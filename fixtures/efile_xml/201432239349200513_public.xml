@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return returnVersion="2012v2.0" xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ReturnHeader binaryAttachmentCount="0">
+    <Timestamp>2014-08-10T21:24:15-07:00</Timestamp>
+    <TaxPeriodEndDate>2012-12-31</TaxPeriodEndDate>
+    <ReturnType>990EZ</ReturnType>
+    <TaxPeriodBeginDate>2012-01-01</TaxPeriodBeginDate>
+    <Filer>
+      <EIN>260687839</EIN>
+      <Name>
+        <BusinessNameLine1>COOKING WITH KIDS</BusinessNameLine1>
+      </Name>
+      <NameControl>COOK</NameControl>
+      <Phone>9259321114</Phone>
+      <USAddress>
+        <AddressLine1>3762 Sundale Road</AddressLine1>
+        <City>Lafayette</City>
+        <State>CA</State>
+        <ZIPCode>945493537</ZIPCode>
+      </USAddress>
+    </Filer>
+    <Officer>
+      <Name>Stephen Smith</Name>
+      <Title>CFO</Title>
+      <Phone>9255133015</Phone>
+      <DateSigned>2014-08-10</DateSigned>
+    </Officer>
+    <TaxYear>2012</TaxYear>
+    <BuildTS>2016-03-07 17:11:31Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCount="6">
+    <IRS990EZ documentId="R000001" referenceDocumentId="R000005 R000006" softwareId="12000197" softwareVersion="v1.00">
+      <AmendedReturn>X</AmendedReturn>
+      <MethodOfAccountingAccrual>X</MethodOfAccountingAccrual>
+      <WebSite>www.cwkf.org</WebSite>
+      <Organization501c3 referenceDocumentId="R000002">X</Organization501c3>
+      <GrossReceipts>24692</GrossReceipts>
+      <InfoInScheduleOPartI>X</InfoInScheduleOPartI>
+      <ContributionsGiftsGrantsEtc>2814</ContributionsGiftsGrantsEtc>
+      <ProgramServiceRevenue>21878</ProgramServiceRevenue>
+      <MembershipDues>0</MembershipDues>
+      <InvestmentIncome>0</InvestmentIncome>
+      <GrossAmountFromSaleOfAssets>0</GrossAmountFromSaleOfAssets>
+      <CostOtherBasisAndSalesExpenses>0</CostOtherBasisAndSalesExpenses>
+      <GainOrLossFromSaleOfAssets>0</GainOrLossFromSaleOfAssets>
+      <GamingGrossIncome>0</GamingGrossIncome>
+      <FundraisingGrossIncome contributionsReportedOnLine1a="0">0</FundraisingGrossIncome>
+      <SpecialEventsDirectExpenses>0</SpecialEventsDirectExpenses>
+      <SpecialEventsNetIncomeLoss>0</SpecialEventsNetIncomeLoss>
+      <GrossSalesOfInventory>0</GrossSalesOfInventory>
+      <CostOfGoodsSold>0</CostOfGoodsSold>
+      <GroProfitLossSalesOfInventory>0</GroProfitLossSalesOfInventory>
+      <OtherRevenueTotal>0</OtherRevenueTotal>
+      <TotalRevenue>24692</TotalRevenue>
+      <GrantsAndSimilarAmountsPaid>0</GrantsAndSimilarAmountsPaid>
+      <BenefitsPaidToOrForMembers>0</BenefitsPaidToOrForMembers>
+      <SalariesOtherCompEmplBenefits>396</SalariesOtherCompEmplBenefits>
+      <FeesAndOthPymtToIndContractors>11060</FeesAndOthPymtToIndContractors>
+      <OccupancyRentUtilitiesAndMaint>431</OccupancyRentUtilitiesAndMaint>
+      <PrintingPublicationsPostage>0</PrintingPublicationsPostage>
+      <OtherExpensesTotal>12408</OtherExpensesTotal>
+      <TotalExpenses>24295</TotalExpenses>
+      <ExcessOrDeficitForYear>397</ExcessOrDeficitForYear>
+      <NetAssetsOrFundBalancesBOY>-3302</NetAssetsOrFundBalancesBOY>
+      <OtherChangesInNetAssets>0</OtherChangesInNetAssets>
+      <NetAssetsOrFundBalancesEOY>-2905</NetAssetsOrFundBalancesEOY>
+      <InfoInScheduleOPartII>X</InfoInScheduleOPartII>
+      <CashSavingsAndInvestments>
+        <BOY>440</BOY>
+        <EOY>3382</EOY>
+      </CashSavingsAndInvestments>
+      <LandAndBuildings>
+        <BOY>0</BOY>
+        <EOY>0</EOY>
+      </LandAndBuildings>
+      <OtherAssetsTotal>
+        <BOY>0</BOY>
+        <EOY>0</EOY>
+      </OtherAssetsTotal>
+      <TotalAssets>
+        <BOY>440</BOY>
+        <EOY>3382</EOY>
+      </TotalAssets>
+      <SumOfTotalLiabilities>
+        <BOY>3742</BOY>
+        <EOY>6287</EOY>
+      </SumOfTotalLiabilities>
+      <NetAssetsOrFundBalances>
+        <BOY>-3302</BOY>
+        <EOY>-2905</EOY>
+      </NetAssetsOrFundBalances>
+      <PrimaryExemptPurpose>Promote healthy eating thru Cooking With Kids Classes</PrimaryExemptPurpose>
+      <ProgramServiceAccomplishment>
+        <DescriptionProgramServiceAccom>Taught numerous cooking classes to young children</DescriptionProgramServiceAccom>
+        <GrantsAndAllocations>0</GrantsAndAllocations>
+        <ProgramServiceExpenses>14923</ProgramServiceExpenses>
+      </ProgramServiceAccomplishment>
+      <TotalProgramServiceExpenses>14923</TotalProgramServiceExpenses>
+      <OfficerDirectorTrusteeKeyEmpl>
+        <PersonName>Linda Kay Rexroat</PersonName>
+        <Title>President, CEO, &amp; Director</Title>
+        <AvgHoursPerWkDevotedToPosition>40</AvgHoursPerWkDevotedToPosition>
+        <Compensation>0</Compensation>
+        <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+        <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+      </OfficerDirectorTrusteeKeyEmpl>
+      <OfficerDirectorTrusteeKeyEmpl>
+        <PersonName>John Rexroat</PersonName>
+        <Title>Secretary and Director</Title>
+        <AvgHoursPerWkDevotedToPosition>10</AvgHoursPerWkDevotedToPosition>
+        <Compensation>0</Compensation>
+        <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+        <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+      </OfficerDirectorTrusteeKeyEmpl>
+      <OfficerDirectorTrusteeKeyEmpl>
+        <PersonName>Stephen F Smith</PersonName>
+        <Title>CFO and Director</Title>
+        <AvgHoursPerWkDevotedToPosition>2</AvgHoursPerWkDevotedToPosition>
+        <Compensation>0</Compensation>
+        <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+        <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+      </OfficerDirectorTrusteeKeyEmpl>
+      <OfficerDirectorTrusteeKeyEmpl>
+        <PersonName>Lou Ann Berardi</PersonName>
+        <Title>Director</Title>
+        <AvgHoursPerWkDevotedToPosition>4</AvgHoursPerWkDevotedToPosition>
+        <Compensation>0</Compensation>
+        <ContriToEmplBenefitPlansEtc>0</ContriToEmplBenefitPlansEtc>
+        <ExpenseAccountOtherAllowances>0</ExpenseAccountOtherAllowances>
+      </OfficerDirectorTrusteeKeyEmpl>
+      <ActivitiesNotPreviouslyRpt>0</ActivitiesNotPreviouslyRpt>
+      <MadeChangesToOrgnzngEtcDoc>0</MadeChangesToOrgnzngEtcDoc>
+      <OrganizationHadUBI>0</OrganizationHadUBI>
+      <SubjectToProxyTax>0</SubjectToProxyTax>
+      <OrganizationDissolvedEtc>0</OrganizationDissolvedEtc>
+      <DirectIndirectPoliticalExpend>0</DirectIndirectPoliticalExpend>
+      <DidOrgFileForm1120POLThisYear>0</DidOrgFileForm1120POLThisYear>
+      <MadeLoansToFromOfficers>1</MadeLoansToFromOfficers>
+      <LoansToFromOfficers referenceDocumentId="R000004">6287</LoansToFromOfficers>
+      <TaxImposedUnderIRC4911>0</TaxImposedUnderIRC4911>
+      <TaxImposedUnderIRC4912>0</TaxImposedUnderIRC4912>
+      <TaxImposedUnderIRC4955>0</TaxImposedUnderIRC4955>
+      <EngagedInExcessBenefitTrans referenceDocumentId="R000004">0</EngagedInExcessBenefitTrans>
+      <AmountOfTaxImposedOnOrgMgr>0</AmountOfTaxImposedOnOrgMgr>
+      <AmountOfTaxReimbursedByOrg>0</AmountOfTaxReimbursedByOrg>
+      <ProhibitedTaxShelterTrans>0</ProhibitedTaxShelterTrans>
+      <StatesWhereCopyOfReturnIsFiled>CA</StatesWhereCopyOfReturnIsFiled>
+      <TheBooksAreInCareOf>
+        <NamePerson>Lynda Rexroat</NamePerson>
+        <AddressUS>
+          <AddressLine1>3762 Sundale Road</AddressLine1>
+          <City>Lafayette</City>
+          <State>CA</State>
+          <ZIPCode>945493537</ZIPCode>
+        </AddressUS>
+        <TelephoneNumber>9253236915</TelephoneNumber>
+      </TheBooksAreInCareOf>
+      <ForeignFinancialAccount>0</ForeignFinancialAccount>
+      <ForeignOffice>0</ForeignOffice>
+      <MaintainAnyDonorAdvisedFunds>0</MaintainAnyDonorAdvisedFunds>
+      <DoesOrgHaveHospital>0</DoesOrgHaveHospital>
+      <TanningServicesProvided>0</TanningServicesProvided>
+      <RelatedOrgControlledEntity>0</RelatedOrgControlledEntity>
+      <TransactionWithControlEntity>0</TransactionWithControlEntity>
+      <EngagePoliticalCmpgnActivities>0</EngagePoliticalCmpgnActivities>
+      <EngageInLobbyingActivities>0</EngageInLobbyingActivities>
+      <OperatingSchool>0</OperatingSchool>
+      <TrnsfrsExemptNonCharRelatedOrg>0</TrnsfrsExemptNonCharRelatedOrg>
+      <PartVIOfCompOfHighestPaidEmpl>NONE</PartVIOfCompOfHighestPaidEmpl>
+      <PartVIAHghstPaidCntrctProfSer>NONE</PartVIAHghstPaidCntrctProfSer>
+      <FiledScheduleA>1</FiledScheduleA>
+    </IRS990EZ>
+    <IRS990ScheduleA documentId="R000002" softwareId="12000197" softwareVersion="v1.00">
+      <PubliclySupportedOrg509a2>X</PubliclySupportedOrg509a2>
+      <GiftsGrantsContribReceived509>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>2814</CurrentTaxYear>
+        <Total>2814</Total>
+      </GiftsGrantsContribReceived509>
+      <GrossReceiptsFromAdmissions>
+        <CurrentTaxYearMinus2Years>2552</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>18394</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>21782</CurrentTaxYear>
+        <Total>42728</Total>
+      </GrossReceiptsFromAdmissions>
+      <GrossReceiptsFromNonUBI>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </GrossReceiptsFromNonUBI>
+      <TaxRevLeviedForOrgBenefit509>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </TaxRevLeviedForOrgBenefit509>
+      <ValueOfSvcsFcltsFurnishdByGovt>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </ValueOfSvcsFcltsFurnishdByGovt>
+      <Total509>
+        <CurrentTaxYearMinus4Years>0</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>0</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>2552</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>18394</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>24596</CurrentTaxYear>
+        <Total>45542</Total>
+      </Total509>
+      <AmtsRecdFromDisqualPersons>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </AmtsRecdFromDisqualPersons>
+      <AmtsFromSubstContributors>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </AmtsFromSubstContributors>
+      <SupportFromDQPsEtc>
+        <CurrentTaxYearMinus4Years>0</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>0</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </SupportFromDQPsEtc>
+      <PublicSupportTotal509>45542</PublicSupportTotal509>
+      <GrossInvestmentIncome509>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </GrossInvestmentIncome509>
+      <Post1975UBTI>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </Post1975UBTI>
+      <InvestmentIncomeAndUBTI>
+        <CurrentTaxYearMinus4Years>0</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>0</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </InvestmentIncomeAndUBTI>
+      <NetIncomeFromOtherUBI>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </NetIncomeFromOtherUBI>
+      <OtherIncome509>
+        <CurrentTaxYearMinus2Years>0</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>0</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>0</CurrentTaxYear>
+        <Total>0</Total>
+      </OtherIncome509>
+      <TotalSupportTotal>
+        <CurrentTaxYearMinus4Years>0</CurrentTaxYearMinus4Years>
+        <CurrentTaxYearMinus3Years>0</CurrentTaxYearMinus3Years>
+        <CurrentTaxYearMinus2Years>2552</CurrentTaxYearMinus2Years>
+        <CurrentTaxYearMinus1Year>18394</CurrentTaxYearMinus1Year>
+        <CurrentTaxYear>24596</CurrentTaxYear>
+        <Total>45542</Total>
+      </TotalSupportTotal>
+      <First5Years509>X</First5Years509>
+    </IRS990ScheduleA>
+    <IRS990ScheduleB documentId="R000003" softwareId="12000197" softwareVersion="v1.00">
+      <ContributorInfo>
+        <ContributorNumber>RESTRICTED</ContributorNumber>
+        <ContributorNameBusiness>
+          <BusinessNameLine1>RESTRICTED</BusinessNameLine1>
+        </ContributorNameBusiness>
+        <ContributorAddressUS>
+          <AddressLine1>RESTRICTED</AddressLine1>
+          <AddressLine2>RESTRICTED</AddressLine2>
+          <City>RESTRICTED</City>
+          <State>RESTRICTED</State>
+          <ZIPCode>RESTRICTED</ZIPCode>
+        </ContributorAddressUS>
+        <AggregateContributions>RESTRICTED</AggregateContributions>
+      </ContributorInfo>
+    </IRS990ScheduleB>
+    <IRS990ScheduleL documentId="R000004" softwareId="12000197" softwareVersion="v1.00">
+      <LoanTable>
+        <NamePerson>Linda Kay Rexroat</NamePerson>
+        <RelationshipWithOrganization>Executive Director</RelationshipWithOrganization>
+        <PurposeOfLoan>Startup Expenses and Cover Shortfalls as Needed</PurposeOfLoan>
+        <LoanToOrganization>X</LoanToOrganization>
+        <OriginalPrincipalAmount>3792</OriginalPrincipalAmount>
+        <BalanceDue>6287</BalanceDue>
+        <Default>0</Default>
+        <ApprovedByBoard>1</ApprovedByBoard>
+        <WrittenAgreement>0</WrittenAgreement>
+      </LoanTable>
+      <TotalBalanceDue>6287</TotalBalanceDue>
+    </IRS990ScheduleL>
+    <IRS990ScheduleO documentId="R000005" softwareId="12000197" softwareVersion="v1.00">
+      <GeneralExplanation>
+        <Identifier>F99Z_P00_S00_L0B</Identifier>
+        <ReturnReference>Form 990-EZ, Header, Line B</ReturnReference>
+        <Explanation>Subsequent transactions were made to books after reports on which previous 990-EZ was based.</Explanation>
+      </GeneralExplanation>
+      <GeneralExplanation>
+        <Identifier>F99Z_P01_S00_L16</Identifier>
+        <ReturnReference>Form 990-EZ, Part I, Line 16</ReturnReference>
+        <Explanation>Description;Amount^Advertising and Promotion;29|Automobile Expense;2721|Bank Service Charges;57|Charitable Contributions;5|Computer and Internet Expenses;404|Fundraiser Expenses;1780|Meeting Expense;116|Dues and Subscriptions;230|Gifts - Acknowledgements - Connecti;81|Key Man Insurance;529|Shared Revenue;227|Consumables - Food;3070|Supplies - Cooking Class;853|Office Expense;1128|Outside Services;80|Small Tools and Equipment;263|Telephone Expense;498|Conferences and Meetings;337^Total;12408^</Explanation>
+      </GeneralExplanation>
+      <GeneralExplanation>
+        <Identifier>F99Z_P02_S00_L26</Identifier>
+        <ReturnReference>Form 990-EZ, Part II, Line 26</ReturnReference>
+        <Explanation>Description;EOY Amount^Outstanding Loan From Executive Director;6287^Total;6287^</Explanation>
+      </GeneralExplanation>
+    </IRS990ScheduleO>
+    <ReasonableCauseExplanation documentId="R000006" softwareId="12000197" softwareVersion="v1.00">
+      <Explanation>Amendment to a previous return filed timely.</Explanation>
+    </ReasonableCauseExplanation>
+  </ReturnData>
+</Return>

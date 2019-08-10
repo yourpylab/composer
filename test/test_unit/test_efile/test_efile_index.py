@@ -3,7 +3,7 @@ from typing import List, Dict
 import pytest
 import sqlite3
 
-from composer.efile.index import EfileIndex
+from composer.efile.structures.index import EfileIndex
 
 @pytest.fixture()
 def index(empty_db: sqlite3.Connection) -> EfileIndex:

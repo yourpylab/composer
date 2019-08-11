@@ -22,6 +22,6 @@ setuptools.setup(
     ],
     entry_points='''
     [console_scripts]
-    composer=composer.cli:cli
+    compose=composer.cli:cli
     '''
 )

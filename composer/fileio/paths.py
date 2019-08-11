@@ -1,10 +1,9 @@
 import os
-from collections.abc import Callable
 from dataclasses import dataclass
 from typing import IO
 
 @dataclass
-class EINPath(Callable):
+class EINPathManager:
     basepath: str
 
     def directory_for(self, ein: str):
@@ -40,3 +39,9 @@ class EINPath(Callable):
         filename: str = template % ein
         filepath: str = os.path.join(directory, filename)
         return open(filepath, "w")
+
+    def exists(self, ein: str, template: str) -> bool:
+        filename: str = template % ein
+        directory: str = self.directory_for(ein)
+        filepath: str = os.path.join(directory, filename)
+        return os.path.exists(filepath)

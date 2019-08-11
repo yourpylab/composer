@@ -5,14 +5,14 @@ from typing import List, Set, Tuple
 
 import pytest
 
-from composer.efile.structures.filing import Filing
+from composer.efile.structures.metadata import FilingMetadata
 from composer.efile.structures.sqlite import EfileIndexTable
 
 tables: List = ["latest_filings", "duplicates"]
 
 @pytest.fixture()
-def alpha_filing_1() -> Filing:
-    return Filing(
+def alpha_filing_1() -> FilingMetadata:
+    return FilingMetadata(
         '0123456789_201012',
         'abcdefghijklmnopqrstuvwxyz',
         'abcdefghijk',
@@ -27,8 +27,8 @@ def alpha_filing_1() -> Filing:
     )
 
 @pytest.fixture()
-def alpha_filing_2() -> Filing:
-    return Filing(
+def alpha_filing_2() -> FilingMetadata:
+    return FilingMetadata(
         '0123456789_201112',
         'zyxwvutsrqponmlkjihgfedcba',
         'zyxwvutsrqp',
@@ -128,15 +128,15 @@ def test_try_to_delete_absent_does_nothing(preloaded_orm, table, alpha_filing_1,
 @pytest.mark.parametrize("table", tables)
 def test_filings_for_ein_none_exist(preloaded_orm, table):
     orm: EfileIndexTable = preloaded_orm(table)
-    expected: List[Filing] = []
+    expected: List[FilingMetadata] = []
     actual = list(orm.filings_for_ein("943041314"))
     assert expected == actual
 
 @pytest.mark.parametrize("table", tables)
 def test_filings_for_ein_two_present(preloaded_orm, table, alpha_filing_1, alpha_filing_2):
     orm: EfileIndexTable = preloaded_orm(table)
-    expected: List[Filing] = [alpha_filing_1, alpha_filing_2]
-    actual: List[Filing] = sorted(orm.filings_for_ein("0123456789"), key=lambda x: x.period)
+    expected: List[FilingMetadata] = [alpha_filing_1, alpha_filing_2]
+    actual: List[FilingMetadata] = sorted(orm.filings_for_ein("0123456789"), key=lambda x: x.period)
     assert expected == actual
 
 @pytest.mark.parametrize("table", tables)

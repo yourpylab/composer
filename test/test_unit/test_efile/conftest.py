@@ -1,5 +1,5 @@
 from collections.abc import Callable
-from composer.efile.structures.filing import Filing
+from composer.efile.structures.metadata import FilingMetadata
 from composer.efile.structures.sqlite import init_sqlite_db
 from typing import List, Dict
 import datetime
@@ -45,16 +45,16 @@ def filing_amended_dict() -> Dict:
 
 @pytest.fixture()
 def dict_to_standard_filing(date_downloaded) -> Callable:
-    def ret(filing_dict: Dict) -> Filing:
-        filing: Filing = Filing.from_json(filing_dict)
+    def ret(filing_dict: Dict) -> FilingMetadata:
+        filing: FilingMetadata = FilingMetadata.from_json(filing_dict)
         filing.date_downloaded = date_downloaded
         return filing
     return ret
 
 @pytest.fixture()
-def filing_original(filing_original_dict, dict_to_standard_filing) -> Filing:
+def filing_original(filing_original_dict, dict_to_standard_filing) -> FilingMetadata:
     return dict_to_standard_filing(filing_original_dict)
 
 @pytest.fixture()
-def filing_amended(filing_amended_dict, dict_to_standard_filing) -> Filing:
+def filing_amended(filing_amended_dict, dict_to_standard_filing) -> FilingMetadata:
     return dict_to_standard_filing(filing_amended_dict)

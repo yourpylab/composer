@@ -1,9 +1,13 @@
 import logging
+import os
 from abc import ABC, abstractmethod
 
 import boto3
 from typing import *
 from datetime import datetime
+
+from mock import MagicMock
+
 from composer.aws.handshake import Handshake
 import botocore.exceptions
 
@@ -88,3 +92,21 @@ class AuthenticatedBucket(Bucket):
         aws_secret = handshake.get_aws_secret()
         resource = S3Resource(aws_id, aws_secret)
         super(AuthenticatedBucket, self).__init__(resource, bucket_name)
+
+def file_backed_bucket(root_dir: str) -> Bucket:
+    """Mock bucket used in tests and fixture creation"""
+    bucket: Bucket = MagicMock(spec=Bucket)
+
+    def get_file_content(filename: str, encoding: Optional[str] = "utf-8") -> str:
+        filepath: str = os.path.join(root_dir, filename)
+        with open(filepath) as fh:
+            return fh.read()
+
+    bucket.get_obj_body.side_effect = get_file_content
+
+    def file_exists(filename: str) -> bool:
+        filepath: str = os.path.join(root_dir, filename)
+        return os.path.exists(filepath)
+
+    bucket.exists.side_effect = file_exists
+    return bucket

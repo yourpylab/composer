@@ -6,7 +6,7 @@ from typing import Iterator, Dict, List
 
 from composer.aws.efile.bucket import EfileBucket
 from composer.aws.s3 import Bucket
-from composer.efile.structures.filing import Filing
+from composer.efile.structures.metadata import FilingMetadata
 
 EARLIEST_YEAR = 2011
 
@@ -22,7 +22,7 @@ class EfileIndices(Iterable):
         bucket: Bucket = EfileBucket()
         return cls(bucket)
 
-    def _get_for_year(self, year: int) -> Iterator[Filing]:
+    def _get_for_year(self, year: int) -> Iterator[FilingMetadata]:
         object_key: str = _json_index_key(year)
         raw: str = self.bucket.get_obj_body(object_key)
         as_json: Dict = json.loads(raw)
@@ -32,9 +32,9 @@ class EfileIndices(Iterable):
         filing_list_key: str = "Filings%i" % year
         filing_list: List = as_json[filing_list_key]
         for filing_spec in filing_list:
-            yield Filing.from_json(filing_spec)
+            yield FilingMetadata.from_json(filing_spec)
 
-    def __iter__(self) -> Iterator[Filing]:
+    def __iter__(self) -> Iterator[FilingMetadata]:
         year: int = EARLIEST_YEAR
 
         # The IRS currently provides e-files starting with those filed in 2011. Blow up if that changes.

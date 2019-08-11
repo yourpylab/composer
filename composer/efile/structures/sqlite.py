@@ -5,20 +5,20 @@ from typing import Dict, Iterator, Optional, Tuple
 
 from attr import dataclass
 
-from composer.efile.structures.filing import Filing
+from composer.efile.structures.metadata import FilingMetadata
 
 @dataclass
 class EfileIndexTable(Iterable):
     conn: Connection
     table_name: str
 
-    def __iter__(self) -> Iterator[Filing]:
+    def __iter__(self) -> Iterator[FilingMetadata]:
         query: str = "SELECT * FROM %s" % self.table_name
         cursor: Cursor = self.conn.cursor()
         for row in cursor.execute(query):
-            yield Filing(*row)
+            yield FilingMetadata(*row)
 
-    def upsert(self, filing: Filing):
+    def upsert(self, filing: FilingMetadata):
         """Inserts or replaces existing row in the table."""
         query: str = "INSERT OR REPLACE INTO %s VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" % self.table_name
         values: Tuple = dataclasses.astuple(filing)
@@ -33,11 +33,11 @@ class EfileIndexTable(Iterable):
         cursor.execute(query, (irs_efile_id,))
         self.conn.commit()
 
-    def _filings_by_key(self, key_name: str, key_value: str) -> Iterator[Filing]:
+    def _filings_by_key(self, key_name: str, key_value: str) -> Iterator[FilingMetadata]:
         query: str = "SELECT * FROM %s WHERE %s = ?" % (self.table_name, key_name)
         cursor: Cursor = self.conn.cursor()
         for row in cursor.execute(query, (key_value,)):
-            yield Filing(*row)
+            yield FilingMetadata(*row)
 
     @property
     def eins(self) -> Iterator[str]:
@@ -46,13 +46,13 @@ class EfileIndexTable(Iterable):
         for row in cursor.execute(query):
             yield row[0]
 
-    def filings_for_ein(self, ein: str) -> Iterator[Filing]:
+    def filings_for_ein(self, ein: str) -> Iterator[FilingMetadata]:
         yield from self._filings_by_key("ein", ein)
 
-    def filings_by_record_id(self, record_id: str) -> Iterator[Filing]:
+    def filings_by_record_id(self, record_id: str) -> Iterator[FilingMetadata]:
         yield from self._filings_by_key("record_id", record_id)
 
-    def filings_by_irs_efile_id(self, irs_efile_id: str) -> Iterator[Filing]:
+    def filings_by_irs_efile_id(self, irs_efile_id: str) -> Iterator[FilingMetadata]:
         yield from self._filings_by_key("irs_efile_id", irs_efile_id)
 
 def init_sqlite_db(connection_str: str) -> Connection:

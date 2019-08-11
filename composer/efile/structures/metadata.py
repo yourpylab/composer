@@ -19,7 +19,7 @@ FIELD_EQUIVALENTS = {
 }
 
 @dataclass
-class Filing:
+class FilingMetadata:
     record_id: str
     irs_efile_id: str
     irs_dln: str
@@ -33,7 +33,7 @@ class Filing:
     url: str
 
     @classmethod
-    def from_json(cls, content: Dict) -> "Filing":
+    def from_json(cls, content: Dict) -> "FilingMetadata":
         params: Dict = {}
         for irs_key, anr_key in FIELD_EQUIVALENTS.items():
             params[anr_key] = content[irs_key]

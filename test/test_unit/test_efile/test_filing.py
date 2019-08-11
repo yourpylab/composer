@@ -3,11 +3,11 @@ from typing import Tuple
 
 import pytest
 
-from composer.efile.structures.filing import Filing
+from composer.efile.structures.metadata import FilingMetadata
 
 @pytest.fixture
-def reference(date_downloaded) -> Filing:
-    return Filing(
+def reference(date_downloaded) -> FilingMetadata:
+    return FilingMetadata(
         record_id="943041314_201012",
         irs_efile_id="201120919349300412",
         irs_dln="93493091004121",
@@ -22,11 +22,11 @@ def reference(date_downloaded) -> Filing:
     )
 
 def test_from_json(reference, date_downloaded, filing_original_dict):
-    actual: Filing = Filing.from_json(filing_original_dict)
+    actual: FilingMetadata = FilingMetadata.from_json(filing_original_dict)
     actual.date_downloaded = date_downloaded  # Too hard to monkeypatch datetime.now
     assert actual == reference
 
-def test_as_tuple(reference: Filing, date_downloaded):
+def test_as_tuple(reference: FilingMetadata, date_downloaded):
     expected: Tuple = (
         "943041314_201012",
         "201120919349300412",

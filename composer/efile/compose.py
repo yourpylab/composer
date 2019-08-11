@@ -1,10 +1,11 @@
 import logging
+from collections import deque
 from collections.abc import Callable
 from dataclasses import dataclass, field
-from typing import Iterator, Tuple, Dict
+from typing import Iterator, Tuple, Dict, Deque
 import json
 
-from composer.aws.efile.bucket import EfileBucket
+from concurrent.futures import ThreadPoolExecutor, Future, as_completed
 from composer.aws.efile.filings import EfileFilings
 from composer.aws.s3 import Bucket
 from composer.efile.structures.metadata import FilingMetadata
@@ -12,6 +13,12 @@ from composer.fileio.paths import EINPathManager
 from composer.timer import TimeLogger
 
 TEMPLATE = "%s.json"
+
+def _await_all(futures: Iterator[Future]):
+    """Since concurrent.futures doesn't have an await function, this function simply halts further work until all
+    futures have completed."""
+    for future in as_completed(futures):  # type: Future
+        future.result()
 
 @dataclass
 class ComposeEfiles(Callable):
@@ -44,6 +51,11 @@ class ComposeEfiles(Callable):
         fn: Callable = lambda: self._do_create_or_update(ein, updates)
         self.t_log.measure(fn)
 
+    def enqueue(self, changes) -> Iterator[Future]:
+        with ThreadPoolExecutor() as executor:
+            for ein, updates in changes:
+                yield executor.submit(self._create_or_update, ein, updates)
+
     def __call__(self, changes: Iterator[Tuple[str, Dict[str, FilingMetadata]]]):
         """Iterate over EINs flagged as having one or more new e-files since the last update. For each one, create or
         update its composite with the new data.
@@ -51,7 +63,6 @@ class ComposeEfiles(Callable):
         :param changes: Iterator of (EIN, dictionary of (filing period -> Filing)).
         """
         logging.info("Updating e-file composites.")
-        # TODO Make concurrent
-        for ein, updates in changes:
-            self._create_or_update(ein, updates)
+        futures: Iterator[Future] = self.enqueue(changes)
+        _await_all(futures)
         self.t_log.finish()

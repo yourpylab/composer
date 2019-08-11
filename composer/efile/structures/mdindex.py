@@ -1,3 +1,4 @@
+import logging
 import sqlite3
 from collections import defaultdict, deque
 from dataclasses import field, dataclass
@@ -22,6 +23,7 @@ class EfileMetadataIndex:
 
     @classmethod
     def build(cls, conn: sqlite3.Connection) -> "EfileMetadataIndex":
+        logging.info("Initializing online metadata index.")
         duplicates: EfileIndexTable = EfileIndexTable(conn, "duplicates")
         latest_filings: EfileIndexTable = EfileIndexTable(conn, "latest_filings")
         return cls(duplicates, latest_filings)
@@ -92,6 +94,7 @@ class EfileMetadataIndex:
 
     def commit(self):
         """Commits all changes that were staged."""
+        logging.info("Committing observed changes to persistent e-file metadata index.")
         for filing in self.staged_dupes.values():
             self.latest_filings.delete_if_exists(filing.irs_efile_id)
             self.duplicates.upsert(filing)

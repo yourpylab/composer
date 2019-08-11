@@ -7,8 +7,8 @@ class EINPathManager:
     basepath: str
 
     def directory_for(self, ein: str):
-        first, second, third = ein[0:3], ein[3:6], ein[6:9]
-        return os.path.join(self.basepath, first, second, third)
+        first, second = ein[0:3], ein[3:6]
+        return os.path.join(self.basepath, first, second)
 
     def open_for_reading(self, ein: str, template: str) -> IO:
         """Locates a file whose filename conforms to a specified template and corresponding to a particular EIN, then

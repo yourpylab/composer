@@ -1,7 +1,7 @@
 import os
 from collections import Callable
 from typing import Optional
-
+from composer.efile.structures.sqlite import init_sqlite_db
 from mock import MagicMock
 
 import pytest

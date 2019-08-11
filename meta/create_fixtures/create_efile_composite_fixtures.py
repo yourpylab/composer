@@ -7,7 +7,7 @@ from mock import MagicMock
 from composer.aws.efile.filings import EfileFilings
 from composer.aws.s3 import file_backed_bucket
 from composer.efile.compose import ComposeEfiles
-from composer.efile.structures.index import EfileMetadataIndex
+from composer.efile.structures.mdindex import EfileMetadataIndex
 from composer.efile.structures.metadata import FilingMetadata
 from composer.fileio.paths import EINPathManager
 

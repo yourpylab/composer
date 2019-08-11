@@ -23,9 +23,9 @@ class TimeLogger:
     def log(self, chunk_count):
         self.elapsed_tot += self.elapsed_chunk
         count_message: str = self.template.format(self.count)
-        chunk_avg: float = self.elapsed_chunk / chunk_count * 1000
-        overall_avg: float = self.elapsed_tot / self.count * 1000
-        timing_message: str = "(chunk avg: %0.03fms | overall avg %0.03fms)" % (chunk_avg, overall_avg)
+        chunk_avg: float = self.elapsed_chunk / chunk_count * 1e9
+        overall_avg: float = self.elapsed_tot / self.count * 1e9
+        timing_message: str = "(chunk avg: %0.02fns | overall avg %0.02fns)" % (chunk_avg, overall_avg)
         full_message: str = "%s %s" % (count_message, timing_message)
         logging.info(full_message)
 

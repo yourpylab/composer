@@ -1,5 +1,8 @@
 import click
 from composer.efile.update import UpdateEfileState
+import logging
+
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 @click.group()
 def cli():

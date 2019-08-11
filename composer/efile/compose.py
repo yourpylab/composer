@@ -4,7 +4,6 @@ from typing import Iterator, Tuple, Dict
 import json
 
 from composer.aws.efile.filings import EfileFilings
-from composer.aws.s3 import Bucket
 from composer.efile.structures.metadata import FilingMetadata
 from composer.fileio.paths import EINPathManager
 

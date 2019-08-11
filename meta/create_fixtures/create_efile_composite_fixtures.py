@@ -7,13 +7,13 @@ from mock import MagicMock
 from composer.aws.efile.filings import EfileFilings
 from composer.aws.s3 import file_backed_bucket
 from composer.efile.compose import ComposeEfiles
-from composer.efile.structures.index import EfileIndex
+from composer.efile.structures.index import EfileMetadataIndex
 from composer.efile.structures.metadata import FilingMetadata
 from composer.fileio.paths import EINPathManager
 
 BASEPATH = "/dmz/github/analysis/composer/"
 
-def get_composite_items(idx: EfileIndex) -> Iterator[Tuple[str, Dict[str, FilingMetadata]]]:
+def get_composite_items(idx: EfileMetadataIndex) -> Iterator[Tuple[str, Dict[str, FilingMetadata]]]:
     for ein in idx.latest_filings.eins:
         observations: Dict = {o.period : o for o in idx.latest_filings.filings_for_ein(ein)}
         o_sorted: OrderedDict = OrderedDict()
@@ -23,7 +23,7 @@ def get_composite_items(idx: EfileIndex) -> Iterator[Tuple[str, Dict[str, Filing
 
 for timepoint in ["first", "second"]:
     conn: Connection = connect("%s/fixtures/sqlite/%s_timepoint.sqlite" % (BASEPATH, timepoint))
-    index: EfileIndex = EfileIndex.build(conn)
+    index: EfileMetadataIndex = EfileMetadataIndex.build(conn)
 
     bucket = file_backed_bucket("%s/fixtures/efile_xml" % BASEPATH)
     s3_filings: EfileFilings = EfileFilings(bucket)

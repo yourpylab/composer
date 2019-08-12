@@ -2,11 +2,12 @@ import logging
 from collections import deque
 from collections.abc import Callable
 from dataclasses import dataclass, field
-from typing import Iterator, Tuple, Dict, Deque
+from typing import Iterator, Tuple, Dict, Deque, List, Iterable
 import json
 
-from concurrent.futures import ThreadPoolExecutor, Future, as_completed
-from composer.aws.efile.filings import EfileFilings
+from concurrent.futures import ThreadPoolExecutor, Future, as_completed, ProcessPoolExecutor
+
+from composer.aws.efile.filings import RetrieveEfiles
 from composer.aws.s3 import Bucket
 from composer.efile.structures.metadata import FilingMetadata
 from composer.fileio.paths import EINPathManager
@@ -22,15 +23,15 @@ def _await_all(futures: Iterator[Future]):
 
 @dataclass
 class ComposeEfiles(Callable):
-    s3_filings: EfileFilings
+    retrieve: RetrieveEfiles
     path_mgr: EINPathManager
     t_log: TimeLogger = field(default_factory=lambda: TimeLogger("Updated {:,} e-file composites."), init=False)
 
     @classmethod
     def build(cls, basepath: str, bucket: Bucket) -> "ComposeEfiles":
-        s3_filings: EfileFilings = EfileFilings(bucket)
+        retrieve: RetrieveEfiles = RetrieveEfiles(bucket)
         path_mgr: EINPathManager = EINPathManager(basepath)
-        return cls(s3_filings, path_mgr)
+        return cls(retrieve, path_mgr)
 
     def _get_existing(self, ein: str) -> Dict:
         try:
@@ -39,22 +40,27 @@ class ComposeEfiles(Callable):
         except FileNotFoundError:
             return {}
 
-    def _do_create_or_update(self, ein: str, updates: Dict[str, FilingMetadata]):
+    def _do_create_or_update(self, ein: str, updates: Dict[str, str]):
         composite: Dict = self._get_existing(ein)
-        for period, metadata in updates.items():
-            content = self.s3_filings[metadata.irs_efile_id]
+        for period, json_path in updates.items():
+            with open(json_path) as fh:
+                content: Dict = json.load(fh)
             composite[period] = content
         with self.path_mgr.open_for_writing(ein, TEMPLATE) as fh:
             json.dump(composite, fh, indent=2)
 
-    def _create_or_update(self, ein: str, updates: Dict[str, FilingMetadata]):
+    def _create_or_update(self, change: Tuple[str, Dict[str, str]]):
+        ein, updates = change
         fn: Callable = lambda: self._do_create_or_update(ein, updates)
         self.t_log.measure(fn)
 
-    def enqueue(self, changes) -> Iterator[Future]:
-        with ThreadPoolExecutor() as executor:
-            for ein, updates in changes:
-                yield executor.submit(self._create_or_update, ein, updates)
+    def use_for_loop(self, json_changes: Iterable[Tuple[str, Dict[str, str]]]):
+        for change in json_changes:
+            self._create_or_update(change)
+
+    def use_process_pool(self, json_changes: Iterable[Tuple[str, Dict[str, str]]]):
+        with ProcessPoolExecutor() as executor:
+            executor.map(self._create_or_update, json_changes)
 
     def __call__(self, changes: Iterator[Tuple[str, Dict[str, FilingMetadata]]]):
         """Iterate over EINs flagged as having one or more new e-files since the last update. For each one, create or
@@ -62,7 +68,12 @@ class ComposeEfiles(Callable):
 
         :param changes: Iterator of (EIN, dictionary of (filing period -> Filing)).
         """
+        change_list: List = list(changes)
+        json_changes: Iterable[Tuple[str, Dict[str, str]]] = list(self.retrieve(change_list))
         logging.info("Updating e-file composites.")
-        futures: Iterator[Future] = self.enqueue(changes)
-        _await_all(futures)
-        self.t_log.finish()
+
+        # Works
+        self.use_for_loop(json_changes)
+
+        # Does not work -- seems to deadlock
+        # self.use_process_pool(json_changes)

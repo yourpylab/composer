@@ -2,13 +2,13 @@ from collections.abc import Callable
 import itertools
 import json
 from sqlite3 import connect, Cursor
-from typing import Dict, Set, Iterator, Tuple
+from typing import Dict, Set
 
 import pytest
 import os
 import shutil
 
-from composer.aws.efile.filings import EfileFilings
+from composer.aws.efile.filings import RetrieveEfiles
 from composer.aws.efile.indices import EfileIndices
 from composer.aws.s3 import Bucket, file_backed_bucket, List
 from composer.efile.compose import ComposeEfiles
@@ -35,9 +35,9 @@ def make_indices(timepoint: str) -> EfileIndices:
 def make_compose(tp_path: str) -> ComposeEfiles:
     efile_xml_path: str = os.path.join(fixture_path, "efile_xml")
     xml_bucket: Bucket = file_backed_bucket(efile_xml_path)
-    s3_filings: EfileFilings = EfileFilings(xml_bucket)
+    retrieve: RetrieveEfiles = RetrieveEfiles(xml_bucket)
     path_mgr: EINPathManager = EINPathManager(tp_path)
-    compose: ComposeEfiles = ComposeEfiles(s3_filings, path_mgr)
+    compose: ComposeEfiles = ComposeEfiles(retrieve, path_mgr)
     return compose
 
 def do_update(timepoint: str, tp_path: str):
@@ -72,7 +72,7 @@ def do_composite_test() -> Callable:
 def test_first_timepoint_composites(ein, do_composite_test):
     do_composite_test("first", tp1_path, ein)
 
-
+# noinspection SqlResolve
 @pytest.mark.parametrize("table, timepoint", itertools.product(tables, timepoints))
 def test_sqlite_tables(table: str, timepoint: str):
     actual_path: str = os.path.join(working_path, timepoint, "state.sqlite")

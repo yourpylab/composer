@@ -59,8 +59,14 @@ class ComposeEfiles(Callable):
             self._create_or_update(change)
 
     def use_process_pool(self, json_changes: Iterable[Tuple[str, Dict[str, str]]]):
+        exceptions = []
         with ProcessPoolExecutor() as executor:
-            executor.map(self._create_or_update, json_changes)
+            futures = [executor.submit(self._create_or_update, json_change) for json_change in json_changes]
+            for future in as_completed(futures):
+                if future.exception() is not None:
+                    exceptions.append(future.exception())
+        if len(exceptions) > 0:
+            raise exceptions[0]
 
     def __call__(self, changes: Iterator[Tuple[str, Dict[str, FilingMetadata]]]):
         """Iterate over EINs flagged as having one or more new e-files since the last update. For each one, create or
@@ -73,7 +79,7 @@ class ComposeEfiles(Callable):
         logging.info("Updating e-file composites.")
 
         # If I use this, it works
-        self.use_for_loop(json_changes)
+        # self.use_for_loop(json_changes)
 
         # If I instead use this, it does not work -- seems to deadlock
-        # self.use_process_pool(json_changes)
+        self.use_process_pool(json_changes)

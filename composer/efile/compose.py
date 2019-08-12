@@ -72,8 +72,8 @@ class ComposeEfiles(Callable):
         json_changes: Iterable[Tuple[str, Dict[str, str]]] = list(self.retrieve(change_list))
         logging.info("Updating e-file composites.")
 
-        # Works
+        # If I use this, it works
         self.use_for_loop(json_changes)
 
-        # Does not work -- seems to deadlock
+        # If I instead use this, it does not work -- seems to deadlock
         # self.use_process_pool(json_changes)

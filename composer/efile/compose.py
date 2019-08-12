@@ -33,34 +33,21 @@ class ComposeEfiles(Callable):
         path_mgr: EINPathManager = EINPathManager(basepath)
         return cls(retrieve, path_mgr)
 
-    def _get_existing(self, ein: str) -> Dict:
-        try:
-            with self.path_mgr.open_for_reading(ein, TEMPLATE) as fh:
-                return json.load(fh)
-        except FileNotFoundError:
-            return {}
-
-    def _do_create_or_update(self, ein: str, updates: Dict[str, str]):
-        composite: Dict = self._get_existing(ein)
-        for period, json_path in updates.items():
-            with open(json_path) as fh:
-                content: Dict = json.load(fh)
-            composite[period] = content
-        with self.path_mgr.open_for_writing(ein, TEMPLATE) as fh:
-            json.dump(composite, fh, indent=2)
-
-    def _create_or_update(self, change: Tuple[str, Dict[str, str]]):
-        ein, updates = change
-        fn: Callable = lambda: self._do_create_or_update(ein, updates)
-        self.t_log.measure(fn)
-
     def use_for_loop(self, json_changes: Iterable[Tuple[str, Dict[str, str]]]):
+        updater = ComposeEfilesUpdater(self.path_mgr)
         for change in json_changes:
-            self._create_or_update(change)
+            updater.create_or_update(change)
 
     def use_process_pool(self, json_changes: Iterable[Tuple[str, Dict[str, str]]]):
+        updater = ComposeEfilesUpdater(self.path_mgr)
+        exceptions = []
         with ProcessPoolExecutor() as executor:
-            executor.map(self._create_or_update, json_changes)
+            futures = [executor.submit(updater.create_or_update, change) for change in json_changes]
+            for future in as_completed(futures):
+                if future.exception() is not None:
+                    exceptions.append(future.exception())
+        if len(exceptions) > 0:
+            raise exceptions[0]
 
     def __call__(self, changes: Iterator[Tuple[str, Dict[str, FilingMetadata]]]):
         """Iterate over EINs flagged as having one or more new e-files since the last update. For each one, create or
@@ -73,7 +60,29 @@ class ComposeEfiles(Callable):
         logging.info("Updating e-file composites.")
 
         # If I use this, it works
-        self.use_for_loop(json_changes)
+        # self.use_for_loop(json_changes)
 
         # If I instead use this, it does not work -- seems to deadlock
-        # self.use_process_pool(json_changes)
+        self.use_process_pool(json_changes)
+
+
+@dataclass
+class ComposeEfilesUpdater:
+    path_mgr: EINPathManager
+
+    def _get_existing(self, ein: str) -> Dict:
+        try:
+            with self.path_mgr.open_for_reading(ein, TEMPLATE) as fh:
+                return json.load(fh)
+        except FileNotFoundError:
+            return {}
+
+    def create_or_update(self, change: Tuple[str, Dict[str, str]]):
+        ein, updates = change
+        composite: Dict = self._get_existing(ein)
+        for period, json_path in updates.items():
+            with open(json_path) as fh:
+                content: Dict = json.load(fh)
+            composite[period] = content
+        with self.path_mgr.open_for_writing(ein, TEMPLATE) as fh:
+            json.dump(composite, fh, indent=2)

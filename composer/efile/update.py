@@ -19,10 +19,10 @@ class UpdateEfileState(Callable):
     compose: ComposeEfiles
 
     @classmethod
-    def build(cls, basepath: str) -> "UpdateEfileState":
+    def build(cls, basepath: str, temp_path: str, no_cleanup: bool) -> "UpdateEfileState":
         bucket: Bucket = EfileBucket()
         indices: EfileIndices = EfileIndices(bucket)
-        compose: ComposeEfiles = ComposeEfiles.build(basepath, bucket)
+        compose: ComposeEfiles = ComposeEfiles.build(basepath, bucket, temp_path, no_cleanup)
         return cls(basepath, indices, compose)
 
     def _connect(self) -> Connection:

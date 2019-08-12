@@ -4,11 +4,9 @@ import os
 import random
 import shutil
 import string
-from collections import deque
-from concurrent.futures import Future
 from concurrent.futures.process import ProcessPoolExecutor
 from concurrent.futures.thread import ThreadPoolExecutor
-from typing import Iterator, Deque
+from typing import Iterator
 
 from composer.aws.s3 import Bucket, Tuple, Dict, Iterable
 from composer.efile.structures.metadata import FilingMetadata
@@ -34,9 +32,10 @@ def _get_download_targets(changes: Iterable[Tuple[str, Dict[str, FilingMetadata]
 
 # TODO Add lots of timing to this once it's working
 
-def _tmpdir() -> str:
+def _tmpdir(tmp_base) -> str:
     while True:
-        dirname: str = '/tmp/' + ''.join([random.choice(string.ascii_letters) for _ in range(10)])
+        rand_str = ''.join([random.choice(string.ascii_letters) for _ in range(10)])
+        dirname: str = os.path.join(tmp_base, rand_str)
         if not os.path.exists(dirname):
             os.makedirs(dirname)
             return dirname
@@ -45,11 +44,12 @@ class RetrieveEfiles:
     """Download any new e-files as XML from S3 and store them in a temporary directory. Convert them to JSON files, also
     stored in a temporary directory. Yield a map of EIN -> (map of period -> JSON file path)."""
 
-    def __init__(self, bucket: Bucket):
+    def __init__(self, bucket: Bucket, tmp_base: str = "/tmp", no_cleanup: bool=False):
         self.bucket: Bucket = bucket
         self.translate = JsonTranslator()
-        self.xml_cache_dir: str = _tmpdir()     # Official temp directory package makes things too hard
-        self.json_cache_dir: str = _tmpdir()
+        self.xml_cache_dir: str = _tmpdir(tmp_base)     # Official temp directory package makes things too hard
+        self.json_cache_dir: str = _tmpdir(tmp_base)
+        self.no_cleanup: bool = no_cleanup
 
     def _get_json_tuples(self, changes: Iterable[Tuple[str, Dict[str, FilingMetadata]]]) \
             -> Iterator[Tuple[str, Dict[str, str]]]:
@@ -100,5 +100,6 @@ class RetrieveEfiles:
         yield from self._get_json_tuples(changes)
 
     def __del__(self):
-        shutil.rmtree(self.xml_cache_dir, ignore_errors=True)
-        shutil.rmtree(self.json_cache_dir, ignore_errors=True)
+        if not self.no_cleanup:
+            shutil.rmtree(self.xml_cache_dir, ignore_errors=True)
+            shutil.rmtree(self.json_cache_dir, ignore_errors=True)

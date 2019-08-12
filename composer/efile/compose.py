@@ -1,44 +1,30 @@
 import logging
-from collections import deque
 from collections.abc import Callable
-from dataclasses import dataclass, field
-from typing import Iterator, Tuple, Dict, Deque, List, Iterable
+from dataclasses import dataclass
+from typing import Iterator, Tuple, Dict, List, Iterable
 import json
 
-from concurrent.futures import ThreadPoolExecutor, Future, as_completed, ProcessPoolExecutor
+from concurrent.futures import Future, as_completed, ProcessPoolExecutor
 
 from composer.aws.efile.filings import RetrieveEfiles
 from composer.aws.s3 import Bucket
 from composer.efile.structures.metadata import FilingMetadata
 from composer.fileio.paths import EINPathManager
-from composer.timer import TimeLogger
 
 TEMPLATE = "%s.json"
-
-def _await_all(futures: Iterator[Future]):
-    """Since concurrent.futures doesn't have an await function, this function simply halts further work until all
-    futures have completed."""
-    for future in as_completed(futures):  # type: Future
-        future.result()
 
 @dataclass
 class ComposeEfiles(Callable):
     retrieve: RetrieveEfiles
     path_mgr: EINPathManager
-    t_log: TimeLogger = field(default_factory=lambda: TimeLogger("Updated {:,} e-file composites."), init=False)
 
     @classmethod
-    def build(cls, basepath: str, bucket: Bucket) -> "ComposeEfiles":
-        retrieve: RetrieveEfiles = RetrieveEfiles(bucket)
+    def build(cls, basepath: str, bucket: Bucket, temp_path: str, no_cleanup: bool) -> "ComposeEfiles":
+        retrieve: RetrieveEfiles = RetrieveEfiles(bucket, temp_path, no_cleanup)
         path_mgr: EINPathManager = EINPathManager(basepath)
         return cls(retrieve, path_mgr)
 
-    def use_for_loop(self, json_changes: Iterable[Tuple[str, Dict[str, str]]]):
-        updater = ComposeEfilesUpdater(self.path_mgr)
-        for change in json_changes:
-            updater.create_or_update(change)
-
-    def use_process_pool(self, json_changes: Iterable[Tuple[str, Dict[str, str]]]):
+    def process_all(self, json_changes: Iterable[Tuple[str, Dict[str, str]]]):
         updater = ComposeEfilesUpdater(self.path_mgr)
         exceptions = []
         with ProcessPoolExecutor() as executor:
@@ -59,11 +45,7 @@ class ComposeEfiles(Callable):
         json_changes: Iterable[Tuple[str, Dict[str, str]]] = list(self.retrieve(change_list))
         logging.info("Updating e-file composites.")
 
-        # If I use this, it works
-        # self.use_for_loop(json_changes)
-
-        # If I instead use this, it does not work -- seems to deadlock
-        self.use_process_pool(json_changes)
+        self.process_all(json_changes)
 
 
 @dataclass

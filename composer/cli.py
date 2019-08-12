@@ -11,8 +11,10 @@ def cli():
 
 @cli.command()
 @click.argument('data_path', type=click.Path(exists=True))
-def efile(data_path: str):
+@click.option('--temp_path', type=click.Path(exists=True), default="/tmp")
+@click.option('--no_cleanup', is_flag=True)
+def efile(data_path: str, temp_path: str, no_cleanup: bool):
     """Update local efile composites, or create them if they do not exist. Results in a set of e-file composites for all
     organizations that have e-filed, along with a SQLite database of latest and duplicate filings."""
-    update: UpdateEfileState = UpdateEfileState.build(data_path)
+    update: UpdateEfileState = UpdateEfileState.build(data_path, temp_path, no_cleanup)
     update()

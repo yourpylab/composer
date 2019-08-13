@@ -39,7 +39,8 @@ class AuthenticatedBucket(Bucket):
         aws_secret = handshake.get_aws_secret()
         config: Config = Config(max_pool_connections=cpu_count() * 10)
         client = boto3.client('s3', aws_access_key_id=aws_id, aws_secret_access_key=aws_secret, config=config)
-        super(AuthenticatedBucket, self).__init__(client, bucket_name)
+        # NOTE: it was old style invocation of super()
+        super().__init__(client, bucket_name)
 
 def file_backed_bucket(root_dir: str) -> Bucket:
     """Mock bucket used in tests and fixture creation"""

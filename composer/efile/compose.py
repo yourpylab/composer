@@ -4,14 +4,14 @@ from dataclasses import dataclass
 from typing import Iterator, Tuple, Dict, List, Iterable
 import json
 
-from concurrent.futures import Future, as_completed, ProcessPoolExecutor
+from concurrent.futures import Future, as_completed, ThreadPoolExecutor
 
 from composer.aws.efile.filings import RetrieveEfiles
 from composer.aws.s3 import Bucket
 from composer.efile.structures.metadata import FilingMetadata
 from composer.fileio.paths import EINPathManager
+from composer.conf import MAX_WORKERS, JSON_FILENAME, UPDATE_TIMEOUT
 
-TEMPLATE = "%s.json"
 
 @dataclass
 class ComposeEfiles(Callable):
@@ -26,12 +26,19 @@ class ComposeEfiles(Callable):
 
     def process_all(self, json_changes: Iterable[Tuple[str, Dict[str, str]]]):
         updater = ComposeEfilesUpdater(self.path_mgr)
+        
+        # NOTE: consider using max_workers setting, set it in conf file. 
+        # I don't consider the following block as a cpu-bound, 
+        # it contains file i/o operations; even if you process a huge file, 
+        # and file translation take a lot of time, file i/o take much
+        # biggere time. Consider using ThreadPoolExecutor instead.
         exceptions = []
-        with ProcessPoolExecutor() as executor:
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = [executor.submit(updater.create_or_update, change) for change in json_changes]
-            for future in as_completed(futures):
+            for future in as_completed(futures, timeout=UPDATE_TIMEOUT):
                 if future.exception() is not None:
                     exceptions.append(future.exception())
+
         if len(exceptions) > 0:
             raise exceptions[0]
 
@@ -41,6 +48,7 @@ class ComposeEfiles(Callable):
 
         :param changes: Iterator of (EIN, dictionary of (filing period -> Filing)).
         """
+
         change_list: List = list(changes)
         json_changes: Iterable[Tuple[str, Dict[str, str]]] = list(self.retrieve(change_list))
         logging.info("Updating e-file composites.")
@@ -54,7 +62,7 @@ class ComposeEfilesUpdater:
 
     def _get_existing(self, ein: str) -> Dict:
         try:
-            with self.path_mgr.open_for_reading(ein, TEMPLATE) as fh:
+            with self.path_mgr.open_for_reading(ein, JSON_FILENAME) as fh:
                 return json.load(fh)
         except FileNotFoundError:
             return {}
@@ -66,5 +74,5 @@ class ComposeEfilesUpdater:
             with open(json_path) as fh:
                 content: Dict = json.load(fh)
             composite[period] = content
-        with self.path_mgr.open_for_writing(ein, TEMPLATE) as fh:
+        with self.path_mgr.open_for_writing(ein, JSON_FILENAME) as fh:
             json.dump(composite, fh, indent=2)

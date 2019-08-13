@@ -10,11 +10,12 @@ from concurrent.futures import ThreadPoolExecutor, Future, as_completed
 from composer.aws.efile.bucket import EfileBucket
 from composer.aws.s3 import Bucket
 from composer.efile.structures.metadata import FilingMetadata
+from composer.conf import (EARLIEST_YEAR, MAX_WORKERS, INDEX_JSON_NAME,
+                           FILING_NAME, DOWNLOAD_TIMEOUT)
 
-EARLIEST_YEAR = 2011
 
 def _json_index_key(year: int) -> str:
-    return "index_%i.json" % year
+    return INDEX_JSON_NAME.format(year)
 
 @dataclass
 class EfileIndices(Iterable):
@@ -35,7 +36,7 @@ class EfileIndices(Iterable):
 
         # The IRS currently includes a single key in its indices. Blow up if that changes.
         assert len(as_json) == 1
-        filing_list_key: str = "Filings%i" % year
+        filing_list_key: str = FILING_NAME.format(year)
         filing_list: List = as_json[filing_list_key]
         return filing_list
 
@@ -47,16 +48,28 @@ class EfileIndices(Iterable):
         assert not self.bucket.exists(_json_index_key(EARLIEST_YEAR - 1))
         assert self.bucket.exists(_json_index_key(EARLIEST_YEAR))
 
-        with ThreadPoolExecutor() as executor:
+        exceptions = list()
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             future_to_year: Dict[Future, int] = {}
             results: Deque[List[Dict]] = deque()
             for year in years:
                 future: Future = executor.submit(self._get_for_year, year)
                 future_to_year[future] = year
-            for completed_future in as_completed(future_to_year):  # type: Future
+
+            for completed_future in as_completed(future_to_year, timeout=DOWNLOAD_TIMEOUT):  # type: Future
                 logging.info("Finished downloading index for %i" % future_to_year[completed_future])
                 results.append(completed_future.result())
 
-            for result in results:
-                for filing_spec in result:
-                    yield FilingMetadata.from_json(filing_spec)
+                if completed_future.exception() is not None:
+                    exceptions.append(completed_future.exception())
+            
+        # NOTE: if you want to omit exceptions raising, just
+        # comment the folliwng lines of code
+        if exceptions:
+            raise exceptions.pop()
+        
+
+        # NOTE: you can consider to use this outsie with-statemnt
+        for result in results:
+            for filing_spec in result:
+                yield FilingMetadata.from_json(filing_spec)

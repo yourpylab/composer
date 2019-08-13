@@ -6,14 +6,13 @@ from io import StringIO
 import re
 import lxml.etree
 from lxml import etree
-from lxml.etree import XMLParser, parse
+from lxml.etree import XMLParser, parse, _Element as Element
 from xmljson import XMLData
 from collections import OrderedDict
 
 # noinspection PyProtectedMember
 from composer.efile.convert import convert
 
-Element = lxml.etree._Element
 
 def _strip_namespace(raw: str) -> str:
     no_ns = re.sub('(xmlns|xsi)(:.*?)?=\".*?\"', "", raw)
@@ -66,7 +65,8 @@ def _get_cleaned_root(raw_xml: str) -> Element:
 class MongoFish(XMLData):
     """Same as BadgerFish convention, except changes "$" to "_" for Mongo."""
     def __init__(self, **kwargs):
-        super(MongoFish, self).__init__(attr_prefix='@', text_content='_', **kwargs)
+        # NOTE: old-stype invocation of super
+        super().__init__(attr_prefix='@', text_content='_', **kwargs)
 
 
 class JsonTranslator(Callable):

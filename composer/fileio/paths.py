@@ -19,7 +19,7 @@ class EINPathManager:
         :return: A file object in read-only mode.
         """
 
-        filename: str = template % ein
+        filename: str = template.format(ein)
         directory: str = self.directory_for(ein)
         filepath: str = os.path.join(directory, filename)
         return open(filepath)
@@ -36,12 +36,12 @@ class EINPathManager:
         directory: str = self.directory_for(ein)
         os.makedirs(directory, exist_ok=True)
 
-        filename: str = template % ein
+        filename: str = template.format(ein)
         filepath: str = os.path.join(directory, filename)
         return open(filepath, "w")
 
     def exists(self, ein: str, template: str) -> bool:
-        filename: str = template % ein
+        filename: str = template.format(ein)
         directory: str = self.directory_for(ein)
         filepath: str = os.path.join(directory, filename)
         return os.path.exists(filepath)
